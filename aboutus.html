@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Events</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="Photos\lightbox2-master\src\css/lightbox.css" rel="stylesheet"> <!--lightbox-->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!--social css-->
+    <link href="../bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--end-->   
+    <style>
+    .glyphiconStyle{
+         color:#80FF00;
+         font-size:200%;
+     }
+    .modalSettings-2{
+        margin-left: 80px;
+        width:1200px;
+        height:750px;
+        margin-top:70px;
+        font-family: Georgia;
+        font-style: normal;
+        font-size: 15px;
+    }
+    .modalSettings{
+        margin-left: 80px;
+        width:1200px;
+        height:750px;
+        font-family: Georgia;
+        font-style: normal;
+        font-size: 15px;
+    }
+    .btnBorder{
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+    #backBtn{
+       position: absolute;
+       top: 25px;
+       left: 340px;
+    }
+    nav{
+      background-image: url(background+pattern+design+33.jpg);
+    }
+    .modal-header ,.modal-footer{
+       background-color:#BDBDBD; 
+    }
+    #zcc{
+        margin-bottom: 0px;
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    #aboutus{
+       padding-bottom: 0px;
+    }
+    #secondRow{
+        margin-bottom: 0px;
+        padding-bottom: -10px;
+    }
+    .mouseoverFont{
+        font-family: Georgia;
+        font-style: italic;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #titleSettings{
+        font-style: italic;
+        font-size: 50px;
+        font-family: Georgia;
+        color:#FFFFFF;
+    }
+   
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="navbar-header col-md-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="titleSettings">AboutUs Page</a>
+                <a href="../Home.html" type="button"><button class="btn btn-danger btn-xs btnBorder" id="backBtn" href="../Home.html">Go back</button></a>
+                
+            </div>
+     
+              <div class=" row col-md-3">
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search" id="search">
+                  <div class="form-group " style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew here?!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm  btnBorder" href=" "><span class="glyphicon glyphicon-hand-right"></span> Register</button>
+                  </div>
+                </form>
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group btnBorder" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHave a account?!&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm  btnBorder" href=" "><span class="glyphicon glyphicon-user"></span> Login</button>
+                  </div>
+                </form>
+             </div>
+              
+        </div>        
+    </nav>
+    <br /><br />
+   <div class="row">
+            <div class="col-lg-12">
+                <h1 >&nbsp&nbsp&nbspAbout us
+                    <small>three masters</small><button type="button" class="btn btn-md btn-danger" data-toggle="collapse" href="#aboutus">Collapse</button>
+                </h1>
+            </div>
+   </div>
+   <div class=" container-fluid well" id="aboutus">
+        <!--第一个图片-->
+        <div class="row">
+           <div class="col-lg-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 thumbnail">
+               <a href="1new.jpg" data-lightbox="image-1" data-title="Grandmaster Jin R. Hong">
+                   <img src="1.jpg" class="img-circle" alt="Grandmaster Jin R. Hong" >
+               </a>
+                   <div class="caption">
+                       <h3>Grandmaster Jin R. Hong</h3>
+                       <p>a 9th Dan black belt in Taekwondo, has more than 40 years of experience in martial arts training. An 
+                           internationally certified referee and a Group A member of both the US Olympic Committee and 
+                           Pan-American Games, he also hosts his annual Rhode Island Open tournament. After arriving in the United 
+                           States in 1982......</p>
+                       <span class="glyphicon glyphicon-ok-sign glyphiconStyle pull-left hidden " id="span-1" ></span>
+                       <button class="btn btn-md btn-info pull-right"  data-toggle="modal" data-target="#master1">Read more</button>
+                       <div class="modal fade modalSettings" id="master1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title text-center" id="myModalLabel">Grandmaster Jin R. Hong</h4>
+                              </div>
+                              <div class="container modal-body">
+
+                                  <div class="container-fluid well">
+                                      <div class="row">
+                                          <div class="col-lg-4 col-lg-offset-2">
+                                              <a href="1new.jpg" data-lightbox="image-1" data-title="Grandmaster Jin R. Hong">
+                                                 <img src="1.jpg" alt="Grandmaster Jin R. Hong" class="img-responsive">
+                                              </a>
+                                          </div>
+                                          <div class="col-lg-6">
+                                              <p>Grand Master Jin R. Hong, a 9th Dan black belt in Taekwondo, has more than 40 years of experience in martial arts training. An internationally certified referee and a Group A member of both the US Olympic Committee and Pan-American Games, he also hosts his annual Rhode Island Open tournament. After arriving in the United States in 1982, Grand Master Hong opened his first school, focusing his teachings on both traditional and Olympic styles. The following year, he founded the Taekwondo Club of Brown University, which he also taught for the next twenty years. In 1993, he opened another school, continuing to teach students the vast benefits of Taekwondo. The accolates that Grand Master Hong has received are not only numerous, but also very well deserved. He has been awarded as one of the top ten grand masters in in the United States. His teachings have given rise to over one thousand black belts, some of whom have gone on to become masters or instructors, teaching students in the ways that they had first learned. Grand Master Hong's philosophy is that Taekwondo is much more than self-defense. He teaches that its foundation is about mental discipline, confidence, balance, and harmony. Gaining strength and energy in these qualities will not only make one a good student, but also a better person in life.
+                                              </p>
+                                          </div>
+                                       </div>
+                                   </div>
+                              </div>
+                              <div class="modal-footer">
+                                     <button type="button" class="btn btn-danger btnCloseModal" data-dismiss="modal" >close</button>
+                              </div>
+                          </div>
+                       </div>
+                   </div>
+              </div>
+        </div>
+
+        <!--hidden modal when all three are done-->
+            <div class="modal fade modalSettings hidden" id="hiddenThreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title text-center" id="myModalLabel">Thanks!</h4>
+                              </div>
+                              <div class="container modal-body">
+                                  <div class="col-lg-7 col-md-12">
+                                      <img src="../dogAboutus.jpg">
+                                  </div>
+                                  <div class="col-lg-5 col-md-12">
+                                      <h1>Thanks for browsing!</h1>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                     <button type="button" class="btn btn-danger btnCloseModal" data-dismiss="modal">close</button>
+                              </div>
+                          </div>
+            </div>
+
+        <!--end of this modal-->
+
+        <div class="row" id="secondRow">
+            <!--第二个图片-->
+             <div class="container-fluid well col-lg-6">
+                <div class=" col-lg-offset-3 col-lg-6 col-md-4 col-sm-6 col-xs-12 thumbnail">
+                   <a href="2new.jpg" data-lightbox="image-1" data-title="Master Louis Alfonso">
+                      <img src="2.jpg" class="img-circle" alt="Master Louis Alfonso">
+                   </a>
+                   <div class="caption">
+                       <h3>Master Louis Alfonso</h3>
+                       <p>A student of Grand Master Hong for 20+ years, 5th Dan Master Louis Alfonso, Ph.D. has been educating students
+                            for 13 of ......</p>
+                       <span class="glyphicon glyphicon-ok-sign glyphiconStyle pull-left hidden" id="span-2"></span>
+                       <button class="btn btn-md btn-info pull-right" type="button" data-toggle="modal" data-target="#master2">Read more</button>
+                       <div class="modal fade modalSettings-2" id="master2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                     <h4 class="modal-title text-center" id="myModalLabel">Master Louis Alfonso</h4>
+                                </div>
+                                <div class="container modal-body">
+                                  <div class="container-fluid well">
+                                      <div class="row">
+                                          <div class="col-lg-4 col-lg-offset-2">
+                                              <a href="2new.jpg" data-lightbox="image-1" data-title="Master Louis Alfonso">
+                                                 <img src="2.jpg" alt="Master Louis Alfonso">
+                                              </a>
+                                          </div>
+                                          <div class="col-lg-6">
+                                              <p>A student of Grand Master Hong for 20+ years, 5th Dan Master Louis Alfonso, Ph.D. has been educating students for 13 of those years, 
+                                                  mainly with children, family, and adult classes. A certified referee of the United States Taekwondo Association, Master Alfonso is 
+                                                  Professor Emeritus of Foundations of Education at Rhode Island College. As a teacher, he enjoys seeing how Taekwondo has helped students 
+                                                  to mature not only in their abilities, but also as persons.
+                                              </p>
+                                          </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="modal-footer">
+                                     <button type="button" class="btn btn-danger btnCloseModal" data-dismiss="modal" >close</button>
+                                </div>
+                            </div>
+                       </div>
+                   </div>       
+            </div>
+   </div>
+
+   <div class="container-fluid well col-lg-6">
+            <!--第三个图片-->
+            <div class=" col-lg-6 col-lg-offset-3 thumbnail">
+                <a href="3new.jpg" data-lightbox="image-1" data-title="Master YungJin Jin">
+                   <img src="3.jpg" class="img-circle" alt="Master YungJin Jin">
+                </a>
+                   <div class="caption">
+                       <h3>Master YungJin Jin</h3>
+                       <p>A 4th Dan Master originally from Korea, Jin Yung Jin has been guiding students in their training for 20+ years, 
+                           .......</p>
+                       <span class="glyphicon glyphicon-ok-sign glyphiconStyle pull-left hidden" id="span-3"></span>    
+                       <button class="btn btn-md btn-info pull-right" type="button" data-toggle="modal" data-target="#master3">Read more</button>
+                       <div class="modal fade modalSettings-2" id="master3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                     <h4 class="modal-title text-center" id="myModalLabel">Master YungJin Jin</h4>
+                                </div>
+                                <div class="container modal-body">
+                                  <div class="container-fluid well">
+                                      <div class="row">
+                                          <div class="col-lg-4 col-lg-offset-2">
+                                              <a href="3new.jpg" data-lightbox="image-1" data-title="Master YungJin Jin">
+                                                <img src="3.jpg" alt="Master YungJin Jin">
+                                              </a>
+                                          </div>
+                                          <div class="col-lg-6">
+                                              <p>A 4th Dan Master originally from Korea, Jin Yung Jin has been guiding students in their training for
+                                                   20+ years, and has shown a great ability in focusing students to the finer points of the class curriculum. 
+                                                   Teaching primarily family and adult classes, Master Jin finds that one of the most endearing qualities is 
+                                                   to teach students not just have respect for others, but also to show the same amount of that respect in themselves 
+                                                   and their abilities.
+                                              </p>
+                                          </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="modal-footer">
+                                     <button type="button" class="btn btn-danger btnCloseModal" data-dismiss="modal" >close</button>
+                                </div>
+                            </div>
+                       </div>
+                   </div>   
+            </div>
+        </div>
+        </div>
+    </div>
+    <div  class="panel panel-default footerSettings" id="zcc" > 
+              <div class="panel-body">
+                  <div class="panel-body">
+                      <div class="col-lg-7 col-md-6 col-sm-12">
+                      <p style="font-size:50px" class="text-center">please contact us:</p>
+                      </div>
+                      <div class="col-lg-5 col-md-6 col-sm-12">
+                         <div class="row">
+                             <br/>
+                             <a class="btn  btn-social btn-twitter">
+                             <span class="fa fa-twitter"></span>
+                                Twitter
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                                Facebook
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                                Instagram
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-google">
+                             <span class="fa fa-google"></span>
+                                Google
+                             </a>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+    </div>
+                        
+     <script src="js/jquery.js"></script>
+<Script>
+$("div.thumbnail").on("mouseover",function(){
+    $(this).css("background-color","#F5F6CE");
+    //console.log($(this).children("div.caption").length);
+    //console.log($(this).children("div.caption").children("button.btn-info").length);
+    $(this).addClass("mouseoverFont");
+    $(this).children("div.caption").children("button").removeClass("btn-info");
+    $(this).children("div.caption").children("button").removeClass("btn-info").addClass("btn-success");
+}).on("mouseout",function(){
+    $(this).css("background-color","#FFFFFF");
+    $(this).removeClass("mouseoverFont");
+    $(this).children("div.caption").children("button").removeClass("btn-success");
+    $(this).children("div.caption").children("button").removeClass("btn-success").addClass("btn-info");
+});
+
+$(".btnCloseModal").click(function(){
+    console.log($(this).parent().parent().parent().parent().parent().length);
+    console.log($(this).parent().parent().parent().parent().children("span.glyphicon").length);
+   $(this).parent().parent().parent().parent().children("span.glyphicon").removeClass("hidden");
+   $(this).parent().parent().parent().parent().parent().removeClass("mouseoverFont").css("background-color","#D8F6CE");
+   if((!$("#span-1").hasClass("hidden")) && (!$("#span-2").hasClass("hidden")) && (!$("#span-3").hasClass("hidden"))){
+       $(".btnCloseModal").attr("data-toggle","modal").attr("data-target","#hiddenThreeModal"); 
+       $("#hiddenThreeModal").removeClass("hidden");
+       console.log("all done!");
+   }
+});
+
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Photos\lightbox2-master\src\js/lightbox.js"></script>
+</body>
+</html>

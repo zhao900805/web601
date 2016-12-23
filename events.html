@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Events</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Events\lightbox2-master\src\css\lightbox.css" rel="stylesheet"> <!--lightbox-->
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <!--social css-->
+    <link href="../bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--end--> 
+    
+   <style>
+   .stableSettings{
+       margin:0px;
+       font-size:30px;
+   }
+   .hidden{
+        display: none;
+    }
+   .btnLenth{
+       width:100px;
+   }
+   .glyphicon-caret{
+       font-size: 30px;
+       color:#2EFEC8;
+   }
+   .btnBorder{
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+   
+   .submitModalSettings{
+       margin:250px;
+       font-size:30px;
+   }
+   .focusControl-label{
+       background-color: #81F7D8;
+       font-size:20px;
+       font-color:#FFFFFF;
+   }
+
+   #backBtn{
+       position: absolute;
+       top: 25px;
+       left: 300px;
+   }
+   nav{
+      background-image: url(background+pattern+design+33.jpg);
+    }
+    .modal-header ,.modal-footer{
+       background-color:#BDBDBD; 
+    }
+    .zcc1{
+        padding-left: 0px;
+    }
+    .zcc2{
+        padding-right: 0px;
+    }
+    #footer{
+        margin-bottom: 0px;
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    .change{
+        background-color:#A9F5BC;
+    }
+    .anotherChange{
+        background-color:#2EFEC8;
+    }
+    .hero-feature-mouseout{
+        background-color: #FFFF00;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #titleSettings{
+        font-style: italic;
+        font-size: 50px;
+        font-family: Georgia;
+        color:#FFFFFF;
+    }
+   </style>
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="navbar-header col-md-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-center" href="#" id="titleSettings">Events Page</a>
+                <a href="../Home.html" type="button"><button class="btn btn-danger btn-xs btnBorder" id="backBtn" href="../Home.html">Go back</button></a>
+            </div>
+    
+            
+              <div class=" row col-md-3">
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew here?!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm btn3d btnBorder" href=" "><span class="glyphicon glyphicon-hand-right"></span> Register</button>
+                  </div>
+                </form>
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHave a account?!&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm  btn3d btnBorder" href=" "><span class="glyphicon glyphicon-user"></span> Login</button>
+                  </div>
+                </form>
+             </div>
+              
+        </div>        
+    </nav>
+    <br />
+    
+    <div class="container">
+        <div class="col-md-6 container-fluid">
+                <img src="1779885_1007087465980777_7534612732086760522_n.jpg">
+        </div>
+        <div class="col-md-6">
+        <header class="jumbotron hero-spacer">   
+            <h1 id="head">Weclome to events page!</h1>
+            <p>We are a premier Martial Arts School located in North Kingstown, RI. Our staff of professional Instructors teach students in both Traditional and Competitive Taekwondo. 
+               Grand Master Hong's philosophy is that Taekwondo is much more than self-defense. He teaches that its foundation is about mental discipline, confidence, balance, and harmony. 
+               Gaining strength and energy in these qualities will not only make one a good student, but also a better person in life.</p>
+        </header>
+        </div>
+       
+    </div>
+    <hr>
+    <div class="container-fluid well">
+        <div class="row">
+            <div class="col-lg-9">
+                Latest Events &nbsp&nbsp<button type="button" class="btn btn-md btn-danger" data-toggle="collapse" href="#photoGroup1">Collapse</button>
+            </div>
+        </div>
+        <div class="row text-center">
+           <div id="photoGroup1"class="container-fluid"><!--一行一组-->
+              <!--第一个图片-->
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hero-feature" id="photo1">
+                <div class="thumbnail" id="smallPhoto1">
+                    <a href="1new.png" data-lightbox="image-1" data-title="RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.">
+                       <img src="1new.png" alt="Events-1">
+                    </a>
+                    <div class="caption">
+                        <h5><span class="bg-danger" id="spanColor1">Posted time:</span>September 30th</h5>
+                        <p>RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.</p>
+                            <!--第一个modal-->
+                            <!--分享小按钮-->
+                        <div class="btn-group pull-left hidden" id="btn-group1">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-heart pull-left glyphicon-caret"></span>
+                                <Span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="btn  btn-social btn-twitter ">
+                                    <span class="fa fa-twitter btnLenth"></span>
+                                       Twitter
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-facebook ">
+                                    <span class="fa fa-facebook btnLenth"></span>
+                                       Facebook
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-instagram ">
+                                    <span class="fa fa-instagram btnLenth"></span>
+                                       Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                           <!--小按钮-->
+                            <button class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Attend!</button>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                               <div class="modal-content">
+                                  <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                     <h4 class="modal-title" id="myModalLabel">I want to attend</h4>
+                                  </div>
+                                  <div class="container modal-body">
+                                    <ul class="nav nav-tabs">
+                                          <li class="active"><a data-toggle="tab" href="#register">Register</a></li>
+                                          <li><a data-toggle="tab" href="#login">Login</a></li>
+                                    </ul>
+                                    <div class="tab-content"> 
+                                       <div class=" tab-pane fade in active" id="register">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                <div class="form-group">
+                                                      <label class="col-sm-1 control-label" for="nameInput-1">Name</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                                             <input class="form-control" id="nameInput-1" type="text" placeholder="your name here">
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                            
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput">Email Address</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                             <div class="input-group">
+                                                                <span class="input-group-addon glyphicon glyphicon-book"></span>
+                                                                <input class="form-control" id="emailInput" type="text" placeholder="your email here">
+                                                             </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">email you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput">Address</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                              <span class="input-group-addon glyphicon glyphicon-plane"></span>
+                                                              <input class="form-control" id="emailInput" type="text" placeholder="your address here">
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="phoneInput">Phone Number</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                              <div class="input-group">
+                                                                  <span class="input-group-addon glyphicon glyphicon-phone-alt"></span>
+                                                                  <input class="form-control" id="phoneInput" type="text" placeholder="your phone number here">
+                                                              </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">Text you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput">password</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                              <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                              <input class="form-control" id="emailInput" type="text" placeholder="">
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput">password again</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                              <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                              <input class="form-control" id="emailInput" type="text" placeholder="">
+                                                          </div>
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#genderRadio">Gender</label>
+                                                 <div id="genderRadio" class="pull-left ">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Male</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Female</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Others</label>
+                                                 </div> 
+                                            </div>
+                                            <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#ageRadio">Age</label>
+                                                 <div id="ageRadio" class="pull-left">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Under 18</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">18 to 50</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">over 50</label>
+                                                 </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                       </div>
+
+                                       <div class=" tab-pane fade" id="login">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput">Name/Phone/Email</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput" type="text" placeholder="your account here">
+                                                      </div>
+                                                   </div>
+                                                </form>
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput">password</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput" type="password" placeholder="">
+                                                      </div>
+                                                   </div>
+                                               </form>
+                                            </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                     <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit1">submit</button>
+                                     <!--submit modal-->
+                                     <div class="modal fade" id="submit1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                         <div class="modal-content submitModalSettings">
+                                             <div class="modal-header" style="background-color:#2EFEC8;font-size:20px">
+                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                     <h1 class="modal-title text-center" id="myModalLabel">Thanks!</h1>
+                                             </div>
+                                             <div class=" modal-body stableSettings">
+                                                 <p class="text-center">You have registered successfully!</p>
+                                             </div>
+                                        </div>
+                                     </div>
+                                     <!--end of sumbmit modal-->
+
+                                  </div>
+                              </div>
+                           </div>
+                           <!--第二个modal-->
+                           <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal1">More Info</button>
+                           <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-content">
+                                  
+                                 <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">More Details</h4>
+                                 </div>
+                                 
+                                 <div class="container modal-body">
+                                     <div class="col-lg-8 container-fluid well">
+                                         <div class="carousel slide" data-ride="carousel" id="carousel-ex">
+                                             <ol class="carousel-indicators">
+                                                 <li data-target="#carousel-ex" data-slide-to="0" class="active"></li>
+                                                 <li data-target="#carousel-ex" data-slide-to="1"></li>
+                                             </ol>
+                                             <div class="carousel-inner">
+                                                 <div class="item active">
+                                                     <a href="1new.png" data-lightbox="image-1" data-title="RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.">
+                                                       <img src="1new.png" alt="1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 1</h4>
+                                                     </div>
+                                                 </div>
+                                                 <div class="item">
+                                                     <a href="1new.png" data-lightbox="image-1" data-title="RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.">
+                                                       <img src="1.1new.png" alt="1.1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 2</h4>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                          </div>
+                                     </div> 
+                                     <div class="container col-lg-4">
+                                         <ul class="nav nav-pills">
+                                             <li class="active"><a data-toggle="tab" href="#date">Date</a></li>
+                                             <li><a data-toggle="tab" href="#location">Location</a></li>
+                                             <li><a data-toggle="tab" href="#contacts">Contacts</a></li>
+                                             <li><a data-toggle="tab" href="#description">Description</a></li>
+                                         </ul>
+                                         <div class="tab-content">
+                                             <div id="date" class="tab-pane fade in active">
+                                                 <p align="left">Sunday, April 2. 2017</p>
+                                             </div>
+                                             <div id="location" class="tab-pane fade">
+                                                 <p align="left">East Greenwich High School GYM</p>
+                                             </div>
+                                             <div id="contacts" class="tab-pane fade">
+                                                 <p align="left">hongsritkd@gmail.com <br />401-885-4900</p>
+                                             </div>
+                                             <div id="description" class="tab-pane fade">
+                                                 <p align="left">Please mark on your calendar.I hope to see Grandmasters, Masters,
+                                                      Instructors, Taekwondo practitioner and friends.</p>
+                                             </div>
+                                         </div>
+                                     </div> 
+                                   </div>
+                                       
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                              </div>
+                          </div>
+                          <!--第一个变色按钮--> 
+                          <button type="button" class="btn btn-success btn-md" id="likeBtn1" data-toggle="modal" data-target="#modalTimeout1">
+                              <span class="glyphicon glyphicon-heart">Interested</span>
+                          </button>  
+                    </div>
+                </div>
+              </div>
+
+              <!--第二个图片-->
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hero-feature" id="photo2">
+                <div class="thumbnail" id="smallPhoto2">
+                    <a href="2new.png" data-lightbox="image-1" data-title="RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.">
+                      <img src="2new.png" alt="Events-1">
+                    </a>
+                    <div class="caption">
+                        <h5><span class="bg-danger" id="spanColor2">Posted time:</span>August 16th</h5>
+                        <p>RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP .</p>
+                            <!--第一个modal-->
+                            <div class="btn-group pull-left hidden" id="btn-group2">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-heart pull-left glyphicon-caret"></span>
+                                <Span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="btn  btn-social btn-twitter ">
+                                    <span class="fa fa-twitter btnLenth"></span>
+                                       Twitter
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-facebook ">
+                                    <span class="fa fa-facebook btnLenth"></span>
+                                       Facebook
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-instagram ">
+                                    <span class="fa fa-instagram btnLenth"></span>
+                                       Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                            <button class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Attend!</button>
+                            <div class="modal fade" id="myModal2" tabindex="0" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                               <div class="modal-content">
+                                  <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                     <h4 class="modal-title" id="myModalLabel2">I want to attend</h4>
+                                  </div>
+                                  <div class="container modal-body">
+                                       <ul class="nav nav-tabs">
+                                          <li class="active"><a data-toggle="tab" href="#register-2">Register</a></li>
+                                          <li><a data-toggle="tab" href="#login-2">Login</a></li>
+                                    </ul>
+                                    <div class="tab-content"> 
+                                       <div class=" tab-pane fade in active" id="register-2">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="nameInput-2">Name</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                                         <input class="form-control" id="nameInput-2" type="text" placeholder="your name here">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                            
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput-2">Email Address</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                            <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-book"></span>
+                                                            <input class="form-control" id="emailInput-2" type="text" placeholder="your email here">
+                                                      </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">email you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                      <label class="col-sm-1 control-label" for="addressInput-2">Address</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-plane"></span>
+                                                             <input class="form-control" id="addressInput-2" type="text" placeholder="your address here">
+                                                         </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="phoneInput-2">Phone Number</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                              <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-phone-alt"></span>
+                                                            <input class="form-control" id="phoneInput-2" type="text" placeholder="your phone number here">
+                                                      </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">Text you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="passwordInput-2">password</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                         <input class="form-control" id="passwordInput-2" type="text" placeholder="">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput-2">password again</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                         <input class="form-control" id="emailInput-2" type="text" placeholder="">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#genderRadio-2">Gender</label>
+                                                 <div id="genderRadio-2" class="pull-left ">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Male</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Female</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Others</label>
+                                                 </div> 
+                                            </div>
+                                            <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#ageRadio-2">Age</label>
+                                                 <div id="ageRadio-2" class="pull-left">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Under 18</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">18 to 50</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">over 50</label>
+                                                 </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                       </div>
+
+                                       <div class=" tab-pane fade" id="login-2">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput-2">Name/Phone/Email</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput-2" type="text" placeholder="your account here">
+                                                      </div>
+                                                   </div>
+                                                </form>
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="passwordInput-2">password</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="passwordInput-2" type="password" placeholder="">
+                                                      </div>
+                                                   </div>
+                                               </form>
+                                            </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                  </div>
+                                  <div class="modal-footer">
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit2">submit</button>
+                                     <!--submit modal-->
+                                     <div class="modal fade" id="submit2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                         <div class="modal-content submitModalSettings">
+                                             <div class="modal-header" style="background-color:#2EFEC8;font-size:20px">
+                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                     <h4 class="modal-title text-center" id="myModalLabel">Alert</h4>
+                                             </div>
+                                             <div class="modal-body stableSettings">
+                                                 <p class="text-center">You have registered successfully!</p>
+                                             </div>
+                                        </div>
+                                     </div>
+                                     <!--end of sumbmit modal-->
+                                  </div>
+                              </div>
+                           </div>
+                           <!--第二个modal-->
+                           <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal22">More Info</button>
+                           <div  class="modal fade" id="myModal22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                              <div  class="modal-content">
+                                  
+                                 <div style="background:#BDBDBD" class="modal-header zcc">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel2">More Details</h4>
+                                 </div>
+                                 
+                                 <div class="container modal-body">
+                                     <div class="col-lg-8 container-fluid well">
+                                         <div class="carousel slide" data-ride="carousel" id="carousel-ex2">
+                                             <ol class="carousel-indicators">
+                                                 <li data-target="#carousel-ex2" data-slide-to="0" class="active"></li>
+                                                 <li data-target="#carousel-ex2" data-slide-to="1"></li>
+                                             </ol>
+                                             <div class="carousel-inner">
+                                                 <div class="item active">
+                                                     <a href="2new.png" data-lightbox="image-1" data-title="RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.">
+                                                        <img src="2new.png" alt="1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 1</h4>
+                                                     </div>
+                                                 </div>
+                                                 <div class="item">
+                                                     <a href="22new.png" data-lightbox="image-1" data-title="RHODE ISLAND STATE OPEN TAE KWON DO CHAMPIONSHIP.">
+                                                        <img src="22new.png" alt="1.1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 2</h4>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                          </div>
+                                     </div> 
+                                     <div class="container col-lg-4">
+                                        <ul class="nav nav-pills">
+                                             <li class="active"><a data-toggle="tab" href="#date2">Date</a></li>
+                                             <li><a data-toggle="tab" href="#location2">Location</a></li>
+                                             <li><a data-toggle="tab" href="#contacts2">Contacts</a></li>
+                                             <li><a data-toggle="tab" href="#description2">Description</a></li>
+                                         </ul>
+                                         <div class="tab-content">
+                                             <div id="date2" class="tab-pane fade in active">
+                                                 <p align="left">Sunday, April 2. 2017</p>
+                                             </div>
+                                             <div id="location2" class="tab-pane fade">
+                                                 <p align="left">(Next to Job Lot) 5955 Post Frenchtown Road, North Kingstown.</p>
+                                             </div>
+                                             <div id="contacts2" class="tab-pane fade">
+                                                 <p align="left">www.ritkd.com <br />401-885-4900</p>
+                                             </div>
+                                             <div id="description2" class="tab-pane fade">
+                                                 <p align="left">Taekwondo match in the Rio Olympics Wednesday August 17th Join our world-class Taekwondo team 
+                                                     have a great opportunity to develop your Olympic style Dynamic kicks and study the most popular martial art 
+                                                     in the world. Age 3 to 80 first class private lesson. Please call back to school special build confidence. 
+                                                     We can make a difference.Grandmaster Hong is a 9th degree black belt and is a internationally certified instructor 
+                                                     by the kukkiwon (headquarters of taekwondo). International Referee. Also after school program. we transport. Taekwondo 
+                                                     class, supervised homework, games and fun.</p>
+                                             </div>
+                                         </div>
+                                     </div> 
+                                   </div>
+                                       
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-md btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                              </div>
+                          </div> 
+                          <!--第二个变色按钮--> 
+                          <button type="button" class="btn btn-success btn-md" id="likeBtn2">
+                              <span class="glyphicon glyphicon-heart">Interested</span>
+                          </button>                   
+                    </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid well">
+        <div class="row">
+            <div class="col-lg-9">
+                elder Events &nbsp&nbsp&nbsp&nbsp<button type="button" class="btn btn-md btn-danger" data-toggle="collapse" href="#photoGroup2">Collapse</button>
+            </div>
+        </div>
+        <div class="row text-center">
+
+           <div id="photoGroup2" class="container-fluid">
+              <!--第三个图片-->
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hero-feature" id="photo3">
+                <div class="thumbnail" id="smallPhoto3">
+                    <a href="3cut.png" data-lightbox="image-1" data-title="32nd Annual RI OPEN TAEKWONDO CHAMPIONSHIP.">
+                       <img src="3cut.png" alt="Events-1">
+                    </a>
+                    <div class="caption">
+                        <h5><span class="bg-danger" id="spanColor3">Posted time:</span>Febuary 19th</h5>
+                        <p>32nd Annual RI OPEN TAEKWONDO CHAMPIONSHIP</p>
+                            <!--第一个modal-->
+                            <div class="btn-group pull-left hidden" id="btn-group3">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-heart pull-left glyphicon-caret"></span>
+                                <Span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="btn  btn-social btn-twitter ">
+                                    <span class="fa fa-twitter btnLenth"></span>
+                                       Twitter
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-facebook ">
+                                    <span class="fa fa-facebook btnLenth"></span>
+                                       Facebook
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-instagram ">
+                                    <span class="fa fa-instagram btnLenth"></span>
+                                       Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                            <button class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal3">Attend!</button>
+                            <div class="modal fade" id="myModal3" tabindex="1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                               <div class="modal-content">
+                                  <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                     <h4 class="modal-title" id="myModalLabel3">I want to attend</h4>
+                                  </div>
+                                  <div class="container modal-body">
+                                       <ul class="nav nav-tabs">
+                                          <li class="active"><a data-toggle="tab" href="#register-3">Register</a></li>
+                                          <li><a data-toggle="tab" href="#login-3">Login</a></li>
+                                    </ul>
+                                    <div class="tab-content"> 
+                                       <div class=" tab-pane fade in active" id="register-3">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="nameInput-3">Name</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                                         <input class="form-control" id="nameInput-3" type="text" placeholder="your name here">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                            
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput-3">Email Address</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                              <div class="input-group">
+                                                                <span class="input-group-addon glyphicon glyphicon-book"></span>
+                                                            <input class="form-control" id="emailInput-3" type="text" placeholder="your email here">
+                                                      </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">email you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="addressInput-3">Address</label>
+                                                      <div class="col-sm-11">
+                                                         <div class="input-group">
+                                                              <span class="input-group-addon glyphicon glyphicon-plane"></span>
+                                                         <input class="form-control" id="addressInput-3" type="text" placeholder="your address here">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="phoneInput-3">Phone Number</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                              <div class="input-group">
+                                                                  <span class="input-group-addon glyphicon glyphicon-phone-alt"></span>
+                                                            <input class="form-control" id="phoneInput-3" type="text" placeholder="your phone number here">
+                                                      </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">Text you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput-3">password</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                              <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                         <input class="form-control" id="emailInput-3" type="text" placeholder="">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="passwordInput-3">password again</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                              <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                         <input class="form-control" id="passwordInput-3" type="text" placeholder="">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#genderRadio-3">Gender</label>
+                                                 <div id="genderRadio-3" class="pull-left ">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Male</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Female</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Others</label>
+                                                 </div> 
+                                            </div>
+                                            <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#ageRadio-3">Age</label>
+                                                 <div id="ageRadio-3" class="pull-left">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Under 18</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">18 to 50</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">over 50</label>
+                                                 </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                       </div>
+
+                                       <div class=" tab-pane fade" id="login-3">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput-3">Name/Phone/Email</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput-3" type="text" placeholder="your account here">
+                                                      </div>
+                                                   </div>
+                                                </form>
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput-3">password</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput-3" type="password" placeholder="">
+                                                      </div>
+                                                   </div>
+                                               </form>
+                                            </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit3">submit</button>
+                                     <!--submit modal-->
+                                     <div class="modal fade" id="submit3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                         <div class="modal-content submitModalSettings">
+                                             <div class="modal-header" style="background-color:#2EFEC8;font-size:20px">
+                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                     <h4 class="modal-title text-center" id="myModalLabel">Alert</h4>
+                                             </div>
+                                             <div class="modal-body stableSettings">
+                                                 <p class="text-center">You have registered successfully!</p>
+                                             </div>
+                                        </div>
+                                     </div>
+                                     <!--end of sumbmit modal-->
+                                  </div>
+                              </div>
+                           </div>
+                           <!--第二个modal-->
+                           <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal33">More Info</button>
+                           <div  class="modal fade" id="myModal33" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                              <div  class="modal-content">
+                                  
+                                 <div style="background:#BDBDBD" class="modal-header zcc">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel3">More Details</h4>
+                                 </div>
+                                 
+                                 <div class="container modal-body">
+                                     <div class="col-lg-8">
+                                         <div class="carousel slide" data-ride="carousel" id="carousel-ex3">
+                                             <ol class="carousel-indicators">
+                                                 <li data-target="#carousel-ex3" data-slide-to="0" class="active"></li>
+                                                 <li data-target="#carousel-ex3" data-slide-to="1"></li>
+                                             </ol>
+                                             <div class="carousel-inner">
+                                                 <div class="item active">
+                                                     <a href="33new.png" data-lightbox="image-1" data-title="32nd Annual RI OPEN TAEKWONDO CHAMPIONSHIP.">
+                                                        <img src="33new.png" alt="1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 1</h4>
+                                                     </div>
+                                                 </div>
+                                                 <div class="item">
+                                                     <a href="333new.png" data-lightbox="image-1" data-title="32nd Annual RI OPEN TAEKWONDO CHAMPIONSHIP.">
+                                                        <img src="333new.png" alt="1.1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 2</h4>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                          </div>
+                                     </div> 
+                                     <div class="container col-lg-4">
+                                         <ul class="nav nav-pills">
+                                             <li class="active"><a data-toggle="tab" href="#date3">Date</a></li>
+                                             <li><a data-toggle="tab" href="#location3">Location</a></li>
+                                             <li><a data-toggle="tab" href="#contacts3">Contacts</a></li>
+                                             <li><a data-toggle="tab" href="#description3">Description</a></li>
+                                         </ul>
+                                         <div class="tab-content">
+                                             <div id="date3" class="tab-pane fade in active">
+                                                 <p align="left">Saturday. April 23, 2016</p>
+                                             </div>
+                                             <div id="location3" class="tab-pane fade">
+                                                 <p align="left">East Greenwich High School GYM</p>
+                                             </div>
+                                             <div id="contacts3" class="tab-pane fade">
+                                                 <p align="left">hongsritkd@gmail.com <br />401-885-4900</p>
+                                             </div>
+                                             <div id="description3" class="tab-pane fade">
+                                                 <p align="left">Looking forward to see you there !</p>
+                                             </div>
+                                         </div>
+                                     </div> 
+                                   </div>
+                                       
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-md btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                              </div>
+                          </div> 
+                          <!--第三个变色按钮--> 
+                          <button type="button" class="btn btn-success btn-md" id="likeBtn3">
+                              <span class="glyphicon glyphicon-heart">Interested</span>
+                          </button>                   
+                    </div>
+                </div>
+              </div>
+
+              <!--第四个图片-->
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hero-feature" id="photo4">
+                <div class="thumbnail" id="smallPhoto4">
+                    <a href="4cut.png" data-lightbox="image-1" data-title="Register today for the 30th RI Open Taekwondo Championship.">
+                       <img src="4cut.png" alt="Events-1">
+                    </a>
+                    <div class="caption">
+                        <h5><span class="bg-danger" id="spanColor4">Posted time:</span>2014 March 15th</h5>
+                        <p>Register today for the 30th RI Open Taekwondo Championship.</p>
+                            <!--第一个modal-->
+                            <div class="btn-group pull-left hidden" id="btn-group4">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-heart pull-left glyphicon-caret"></span>
+                                <Span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="btn  btn-social btn-twitter ">
+                                    <span class="fa fa-twitter btnLenth"></span>
+                                       Twitter
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-facebook ">
+                                    <span class="fa fa-facebook btnLenth"></span>
+                                       Facebook
+                                    </a>
+                                </li>
+                                <li><a class="btn  btn-social btn-instagram ">
+                                    <span class="fa fa-instagram btnLenth"></span>
+                                       Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                            <button class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal4">Attend!</button>
+                            <div class="modal fade" id="myModal4" tabindex="2" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+                               <div class="modal-content">
+                                  <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                     <h4 class="modal-title" id="myModalLabel4">I want to attend</h4>
+                                  </div>
+                                  <div class="container modal-body">
+                                       <ul class="nav nav-tabs">
+                                          <li class="active"><a data-toggle="tab" href="#register-4">Register</a></li>
+                                          <li><a data-toggle="tab" href="#login-4">Login</a></li>
+                                    </ul>
+                                    <div class="tab-content"> 
+                                       <div class=" tab-pane fade in active" id="register-4">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="nameInput-4">Name</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                                         <input class="form-control" id="nameInput-4" type="text" placeholder="your name here">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                            
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput-4">Email Address</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                              <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-book"></span>
+                                                            <input class="form-control" id="emailInput-4" type="text" placeholder="your email here">
+                                                      </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">email you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="addressInput-4">Address</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-plane"></span>
+                                                         <input class="form-control" id="addressInput-4" type="text" placeholder="your address here">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="phoneInput-4">Phone Number</label>
+                                                      <div class="col-sm-11 zcc1">
+                                                          <div class="col-lg-10">
+                                                              <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-phone-alt"></span>
+                                                            <input class="form-control" id="phoneInput-4" type="text" placeholder="your phone number here">
+                                                      </div>
+                                                          </div>
+                                                            <label class="checkbox-inline"><input type="checkbox" name="optradio">Text you?</label>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="passwordInput-4">password</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                         <input class="form-control" id="passwordInput-4" type="text" placeholder="">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <form class="form-horizontal">
+                                                <div class="form-group">
+                                                   <label class="col-sm-1 control-label" for="emailInput-4">password again</label>
+                                                      <div class="col-sm-11">
+                                                          <div class="input-group">
+                                                             <span class="input-group-addon glyphicon glyphicon-exclamation-sign"></span>
+                                                         <input class="form-control" id="emailInput-4" type="text" placeholder="">
+                                                      </div>
+                                                      </div>
+                                                </div>
+                                             </form>
+                                             <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#genderRadio-4">Gender</label>
+                                                 <div id="genderRadio-4" class="pull-left ">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Male</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Female</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">Others</label>
+                                                 </div> 
+                                            </div>
+                                            <div class="row">
+                                                 <label class="col-sm-1 zcc2" for="#ageRadio-4">Age</label>
+                                                 <div id="ageRadio-4" class="pull-left">   
+                                                    &nbsp&nbsp&nbsp<label class="radio-inline"><input type="radio" name="gender">Under 18</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">18 to 50</label>
+                                                    <label class="radio-inline"><input type="radio" name="gender">over 50</label>
+                                                 </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                       </div>
+
+                                       <div class=" tab-pane fade" id="login-4">
+                                          <div class="row">
+                                             <div class="well">
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput-4">Name/Phone/Email</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput-4" type="text" placeholder="your account here">
+                                                      </div>
+                                                   </div>
+                                                </form>
+                                                <form class="form-horizontal">
+                                                   <div class="form-group">
+                                                      <label class="col-sm-2 control-label" for="nameInput-4">password</label>
+                                                      <div class="col-sm-10">
+                                                         <input class="form-control" id="nameInput-4" type="password" placeholder="">
+                                                      </div>
+                                                   </div>
+                                               </form>
+                                            </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit4">submit</button>
+                                     <!--submit modal-->
+                                     <div class="modal fade" id="submit4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                         <div class="modal-content submitModalSettings">
+                                             <div class="modal-header" style="background-color:#2EFEC8;font-size:20px">
+                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                     <h4 class="modal-title text-center" id="myModalLabel">Alert</h4>
+                                             </div>
+                                             <div class="modal-body stableSettings">
+                                                 <p class="text-center">You have registered successfully!</p>
+                                             </div>
+                                        </div>
+                                     </div>
+                                     <!--end of sumbmit modal-->
+                                  </div>
+                              </div>
+                           </div>
+                           <!--第二个modal-->
+                           <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal44">More Info</button>
+                           <div  class="modal fade" id="myModal44" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+                              <div  class="modal-content">
+                                  
+                                 <div style="background:#BDBDBD" class="modal-header zcc">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel4">More Details</h4>
+                                 </div>
+                                 
+                                 <div class="container modal-body">
+                                     <div class="col-lg-8">
+                                         <div class="carousel slide" data-ride="carousel" id="carousel-ex4">
+                                             <ol class="carousel-indicators">
+                                                 <li data-target="#carousel-ex4" data-slide-to="0" class="active"></li>
+                                                 <li data-target="#carousel-ex4" data-slide-to="1"></li>
+                                             </ol>
+                                             <div class="carousel-inner">
+                                                 <div class="item active">
+                                                     <a href="44new.png" data-lightbox="image-1" data-title="Register today for the 30th RI Open Taekwondo Championship.">
+                                                        <img src="44new.png" alt="1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 1</h4>
+                                                     </div>
+                                                 </div>
+                                                 <div class="item">
+                                                     <a href="44new.png" data-lightbox="image-1" data-title="Register today for the 30th RI Open Taekwondo Championship.">
+                                                        <img src="444new.png" alt="1.1.png">
+                                                     </a>
+                                                     <div class="carousel-caption">
+                                                         <h4>Event photo 2</h4>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                          </div>
+                                     </div> 
+                                     <div class="container col-lg-4">
+                                         <ul class="nav nav-pills">
+                                             <li class="active"><a data-toggle="tab" href="#date4">Date</a></li>
+                                             <li><a data-toggle="tab" href="#location4">Location</a></li>
+                                             <li><a data-toggle="tab" href="#contacts4">Contacts</a></li>
+                                             <li><a data-toggle="tab" href="#description4">Description</a></li>
+                                         </ul>
+                                         <div class="tab-content">
+                                             <div id="date4" class="tab-pane fade in active">
+                                                 <p align="left">May 3, 2014.</p>
+                                             </div>
+                                             <div id="location4" class="tab-pane fade">
+                                                 <p align="left">Brown University (Providence, RI)</p>
+                                             </div>
+                                             <div id="contacts4" class="tab-pane fade">
+                                                 <p align="left">hongsritkd@gmail.com <br />401-885-4900</p>
+                                             </div>
+                                             <div id="description4" class="tab-pane fade">
+                                                 <p align="left">Register today for the 30th RI Open Taekwondo Championship held 
+                                                    this year at Brown University (Providence, RI) on May 3, 2014. The entry deadline is April 23</p>
+                                             </div>
+                                         </div>
+                                     </div> 
+                                   </div>
+                                       
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-md btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                              </div>
+                          </div> 
+                          <!--第四个变色按钮--> 
+                          <button type="button" class="btn btn-success btn-md" id="likeBtn4">
+                              <span class="glyphicon glyphicon-heart">Interested</span>
+                          </button>                   
+                    </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+<div  class="panel panel-default footerSettings" id="footer" >
+              
+              <div class="panel-body">
+                  <div class="panel-body">
+                      <div class="col-lg-7 col-md-6 col-sm-12">
+                      <p style="font-size:50px" class="text-center">please contact us:</p>
+                      </div>
+                      <div class="col-lg-5 col-md-6 col-sm-12">
+                         <div class="row">
+                             <br/>
+                             <a class="btn  btn-social btn-twitter">
+                             <span class="fa fa-twitter"></span>
+                                Twitter
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                                Facebook
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                                Instagram
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-google">
+                             <span class="fa fa-google"></span>
+                                Google
+                             </a>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+    </div>
+   
+    <script src="js/jquery.js"></script>
+    <script>
+    //1
+    $("#likeBtn1").click(function(){
+           if($("#photo1").hasClass("change")){
+               $("#photo1").removeClass("change");
+               $("#smallPhoto1").removeClass("anotherChange");
+               $("#spanColor1").removeClass("bg-info");
+               $("#spanColor1").addClass("bg-danger");  
+               $("#btn-group1").addClass("hidden");    
+           }else{
+               $("#photo1").addClass("change");
+               $("#smallPhoto1").addClass("anotherChange");
+               $("#spanColor1").removeClass("bg-danger");
+               $("#spanColor1").addClass("bg-info");
+               $("#btn-group1").removeClass("hidden");
+           }
+     });
+     //2
+     $("#likeBtn2").click(function(){
+           if($("#photo2").hasClass("change")){
+               $("#photo2").removeClass("change");
+               $("#smallPhoto2").removeClass("anotherChange");
+               $("#spanColor2").removeClass("bg-info");
+               $("#spanColor2").addClass("bg-danger");
+               $("#btn-group2").addClass("hidden");       
+           }else{
+               $("#photo2").addClass("change");
+               $("#smallPhoto2").addClass("anotherChange");
+               $("#spanColor2").removeClass("bg-danger");
+               $("#spanColor2").addClass("bg-info");
+               $("#btn-group2").removeClass("hidden");
+           }
+     });
+     //3
+     $("#likeBtn3").click(function(){
+           if($("#photo3").hasClass("change")){
+               $("#photo3").removeClass("change");
+               $("#smallPhoto3").removeClass("anotherChange");
+               $("#spanColor3").removeClass("bg-info");
+               $("#spanColor3").addClass("bg-danger");
+                $("#btn-group3").addClass("hidden");       
+           }else{
+               $("#photo3").addClass("change");
+               $("#smallPhoto3").addClass("anotherChange");
+               $("#spanColor3").removeClass("bg-danger");
+               $("#spanColor3").addClass("bg-info");
+               $("#btn-group3").removeClass("hidden");
+           }
+     });
+     //4
+    $("#likeBtn4").click(function(){
+           if($("#photo4").hasClass("change")){
+               $("#photo4").removeClass("change");
+               $("#smallPhoto4").removeClass("anotherChange");
+               $("#spanColor4").removeClass("bg-info");
+               $("#spanColor4").addClass("bg-danger");
+               $("#btn-group4").addClass("hidden");       
+           }else{
+               $("#photo4").addClass("change");
+               $("#smallPhoto4").addClass("anotherChange");
+               $("#spanColor4").removeClass("bg-danger");
+               $("#spanColor4").addClass("bg-info");
+               $("#btn-group4").removeClass("hidden");
+           }
+     });
+
+     $("div.hero-feature").on("mouseover",function(){
+          $(this).addClass("hero-feature-mouseout"); 
+          $(this).children().css("background-color","#F2F5A9");
+     }).on("mouseout",function(){
+          $(this).removeClass("hero-feature-mouseout"); 
+          $(this).children().css("background-color","#FFFFFF");
+     });
+
+
+     $("input.form-control").focus(function(){
+        $(this).addClass("focusControl-label");
+        console.log("focus1!");
+     }).blur(function(){
+        $(this).removeClass("focusControl-label");
+        console.log("blur1!");
+     });
+
+    
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Events\lightbox2-master\src\js/lightbox.js"></script>
+    
+</body>
+
+</html>

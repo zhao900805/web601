@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Half Slider - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+    <!--social css-->
+    <link href="../bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--end--> 
+    <style>
+    .btnBorder{
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+    #backBtn{
+       position: absolute;
+       top: 25px;
+       left: 300px;
+   }
+    nav{
+      background-image: url(background+pattern+design+33.jpg);
+    }
+    .modal-header ,.modal-footer{
+       background-color:#BDBDBD; 
+    }
+    #zcc{
+        margin-bottom: 0px;
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    .zcc{
+        margin-bottom: 0px;
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    div.sfill{
+        background-image: url(video1.png);
+    }
+    #photo3{
+        background-image: url(video1.png);
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+    }
+    .photo3{
+        width:100%;
+        height:100%;
+    }
+    .carousel-inner{
+        height: 400px;
+    }
+    .video-row-one{
+        padding:0px;
+        margin: 52px;
+    }
+    .video-row{
+        margin-right: 20px;
+        margin-left: 20px;
+        
+    }
+    div.modalSetting{
+        margin:10px;
+        height: 600px;
+        padding: 0px;
+    }
+    div.modalBodySetting{
+        padding-bottom: 10px;
+        padding-top: 0px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    div.overSetting{
+        margin-top: 50px;
+        margin-left: 270px;
+        margin-right: 270px;
+        margin-bottom: 50px;
+    }
+    .videoListModal{
+        padding:1px;
+        
+    }
+    .buttonAlign{
+        bottom:0;  
+        margin-bottom:0px;
+    }
+    .carouselSetting{
+       margin-left:20px;
+       margin-right:20px;
+       padding-top:0px;
+       padding-bottom:0px;
+    }
+    .hidden{
+        display: none;
+    }
+    .mouseOverSettings{
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #titleSettings{
+        font-style: italic;
+        font-size: 50px;
+        font-family: Georgia;
+        color:#FFFFFF;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="navbar-header col-md-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="titleSettings">Videos Page</a>
+                <a href="../Home.html" type="button"><button class="btn btn-danger btn-xs btnBorder" id="backBtn" href="../Home.html">Go back</button></a>
+            </div>  
+              <div class=" row col-md-3">
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew here?!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm btn3d btnBorder" href=" "><span class="glyphicon glyphicon-hand-right"></span> Register</button>
+                  </div>
+                </form>
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHave a account?!&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm  btn3d btnBorder" href=" "><span class="glyphicon glyphicon-user"></span> Login</button>
+                  </div>
+                </form>
+             </div>           
+        </div>        
+    </nav><br /><br /><br /><br /><br />
+
+ <div class="container-fluid well ">
+     <div class="col-lg-12 col-md-12 container-fluid well carouselSetting" id="carousel1">
+                <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a data-toggle="modal" data-target="#videoPhoto1">
+                                        <img class="slide-image" src="video1.PNG" alt="">
+                                    </a>
+                                </div>
+                                <!--first modal-->
+                                <div class="modal fade modalSetting" id="videoPhoto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h2 class="modal-title text-center" id="myModalLabel">Video 1: Demo team part 1</h2>
+                                        </div>
+                                        <div class="container modal-body ">
+                                            <div class="col-lg-8 container-fluid well modalBodySetting">
+                                                <div class="embed-responsive embed-responsive-4by3">
+                                                    <iframe width="800" height="500" src="https://www.youtube.com/embed/xAUrEHLnzgg" frameborder="0" allowfullscreen></iframe>
+                                                </div>  
+                                            </div> 
+                                            <div class="container col-lg-4">
+                                                <ul class="nav nav-pills">
+                                                    <li class="active"><a data-toggle="tab" href="#date1">Date</a></li>
+                                                    <li><a data-toggle="tab" href="#description1">Description</a></li>
+                                                    <li><a data-toggle="tab" href="#source1">Source</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="date1" class="tab-pane fade in active">
+                                                        <p align="left">April, 20th, 2009</p>
+                                                    </div>
+                                                    <div id="description1" class="tab-pane fade">
+                                                        <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                    </div>
+                                                    <div id="source1" class="tab-pane fade">
+                                                        <p align="left">Youtube : Jin R. Hong</p>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                        <div class="modal-footer" >
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of first modal-->
+
+                                <div class="item">
+                                    <a data-toggle="modal" data-target="#videoPhoto2">
+                                        <img class="slide-image" src="video2.PNG" alt="">
+                                    </a>
+                                </div>
+                                <!--second modal-->
+                                <div class="modal fade modalSetting" id="videoPhoto2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h2 class="modal-title text-center" id="myModalLabel">Video2: Alex Fight MSTA 2011</h2>
+                                        </div>
+                                        <div class="container modal-body">
+                                            <div class="col-lg-8 container-fluid well modalBodySetting">
+                                                <div class="embed-responsive embed-responsive-4by3">
+                                                    <iframe width="800" height="500" src="https://www.youtube.com/embed/4QT784V-2fk" frameborder="0" allowfullscreen></iframe>
+                                                </div>  
+                                            </div> 
+                                            <div class="container col-lg-4">
+                                                <ul class="nav nav-pills">
+                                                    <li class="active"><a data-toggle="tab" href="#date1">Date</a></li>
+                                                    <li><a data-toggle="tab" href="#description1">Description</a></li>
+                                                    <li><a data-toggle="tab" href="#source1">Source</a></li>
+                                               </ul>
+                                               <div class="tab-content">
+                                                   <div id="date1" class="tab-pane fade in active">
+                                                       <p align="left">April, 20th, 2009</p>
+                                                   </div>
+                                                   <div id="description1" class="tab-pane fade">
+                                                       <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                   </div>
+                                                   <div id="source1" class="tab-pane fade">
+                                                       <p align="left">Youtube : Jin R. Hong</p>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" >
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of second modal-->
+
+                                <div class="item">
+                                    <a data-toggle="modal" data-target="#videoPhoto3">
+                                        <img class="slide-image" src="video3.PNG" alt="">
+                                    </a>
+                                </div>
+                                <!--third modal-->
+                                <div class="modal fade modalSetting" id="videoPhoto3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h2 class="modal-title text-center" id="myModalLabel">Video3: Master Goretoy Sparring MSTA Open</h2>
+                                        </div>
+                                        <div class="container modal-body">
+                                            <div class="col-lg-8 container-fluid well modalBodySetting">
+                                                <div class="embed-responsive embed-responsive-4by3">
+                                                    <iframe width="800" height="500" src="https://www.youtube.com/embed/_Bo8AC57pE4"  frameborder="0" allowfullscreen></iframe>
+                                                </div>  
+                                            </div> 
+                                            <div class="container col-lg-4">
+                                                <ul class="nav nav-pills">
+                                                    <li class="active"><a data-toggle="tab" href="#date1">Date</a></li>
+                                                    <li><a data-toggle="tab" href="#description1">Description</a></li>
+                                                    <li><a data-toggle="tab" href="#source1">Source</a></li>
+                                               </ul>
+                                               <div class="tab-content">
+                                                   <div id="date1" class="tab-pane fade in active">
+                                                       <p align="left">April, 20th, 2009</p>
+                                                   </div>
+                                                   <div id="description1" class="tab-pane fade">
+                                                       <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                   </div>
+                                                   <div id="source1" class="tab-pane fade">
+                                                       <p align="left">Youtube : Jin R. Hong</p>
+                                                   </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" >
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of third modal-->
+
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                </div>
+            </div>
+  
+<div class="panel panel-info video-row">
+    <div class="panel-heading ">
+        &nbsp&nbsp Video List &nbsp&nbsp
+        <button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#overview">Overview</button>
+        <button type="button" class="btn btn-md btn-danger" data-toggle="collapse" href="#videoList">Collapse</button>
+        <div class="modal fade overSetting" id="overview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-center" id="myModalLabel">Overview</h4>
+                </div>
+                <div class="container modal-body ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/hd-AM38L-o0" class="img-rounded">
+                                <img src="overview1.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Dr. Alfonso Break</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/QurC6YYAWcY" class="img-rounded">
+                                <img src="overview2.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Bradley Sypher Break</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/qGNW4nQXUrA" class="img-rounded">
+                                <img src="overview3.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Billy Ricci Break</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/nQ9tp5mGLPI" class="img-rounded">
+                                <img src="overview4.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Basic Foot Pattern</p>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/uI_qcAycn4c" class="img-rounded">
+                                <img src="overview5.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Basic Hand Pattern</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/Jk71LiTvdcQ" class="img-rounded">
+                                <img src="overview6.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Self-Defense 10-12</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/goRIuz0J_AE" class="img-rounded">
+                                <img src="overview7.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Self-Defense 7-9</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/m1O6goBBi9Q" class="img-rounded">
+                                <img src="overview8.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Self-Defense 4-6</p>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/d9r6ZVf7Hu4" class="img-rounded">
+                                <img src="overview9.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">Self-Defense 1-3</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/Y5XWTokc9bw" class="img-rounded">
+                                <img src="overview10.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">One-Steps 28-30</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/GaXgjlB-TEY" class="img-rounded">
+                                <img src="overview11.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">One-Steps 25-27</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/JX2-zUyytrA" class="img-rounded">
+                                <img src="overview12.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">One-Steps 22-24</p>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/uSohYNpkwOk" class="img-rounded">
+                                <img src="overview13.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">One-Steps 19-21</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/6Twljsl1rW4" class="img-rounded">
+                                <img src="overview14.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">One-Steps 16-18</p>
+                            </a>
+                            </div>
+                            <div class="videoListModal container well col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <a href="https://www.youtube.com/embed/GY5zV0aM2D0" class="img-rounded">
+                                <img src="overview15.png" alt="" class="img-responsive center-block">
+                                <p class="text-center">One-Steps 13-15</p>
+                            </a>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                            <button type="button" class="btn btn-danger pull-right  buttonAlign" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                        
+
+                   </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="panel-body" id="videoList">
+        <!--the first row-->
+        <div class="row">
+            <!--first video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo1"> 
+                <div class="panel-heading ">
+                    <div class="panel-title">
+                        Dr. Alfonso Break
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video1">read more</button>
+                            <div class="modal fade modalSetting" id="video1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Dr. Alfonso Break</h4>
+                                    </div>
+                                    <div class="container modal-body ">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/hd-AM38L-o0" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date1">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description1">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source1">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date1" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description1" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source1" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" >
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hd-AM38L-o0" frameborder="0" allowfullscreen id="dislikeVideo1"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer " id="changeFooter1">
+                    <span id="dislikeStar1" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn1">Dislike</button>
+                    <span id="likedStar1" class="hidden"><span class="glyphicon glyphicon-star text-danger" >Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn1">Mark</button><br />    
+                </div>
+            </div>
+            
+            
+            <!--second video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo2">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Bradley Sypher Break
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video2">read more</button>
+                        <div class="modal fade modalSetting" id="video2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Bradley Sypher Break</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/QurC6YYAWcY" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date2">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description2">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source2">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date2" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description2" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source2" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QurC6YYAWcY" frameborder="0" allowfullscreen id="dislikeVideo2"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar2" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn2">Dislike</button>
+                    <span id="likedStar2" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn2">Mark</button><br />
+                </div>
+            </div>
+            <!--third vidoe-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info  video-row-one" id="changeVideo3">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Billy Ricci Break
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video3">read more</button>
+                        <div class="modal fade modalSetting" id="video3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Billy Ricci Break</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/qGNW4nQXUrA" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date3">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description3">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source3">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date3" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description3" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source3" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qGNW4nQXUrA" frameborder="0" allowfullscreen id="dislikeVideo3"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar3" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn3">Dislike</button>
+                    <span id="likedStar3" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn3">Mark</button><br />
+                </div>
+            </div>
+       </div>
+
+       <!--the second row-->
+       <div class="row">
+            <!--first video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo4">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Basic Foot Pattern
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video4">read more</button>
+                        <div class="modal fade modalSetting" id="video4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Basic Foot Pattern</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nQ9tp5mGLPI" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date4">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description4">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source4">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date4" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description4" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source4" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nQ9tp5mGLPI" frameborder="0" allowfullscreen id="dislikeVideo4"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar4" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn4">Dislike</button>
+                    <span id="likedStar4" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn4">Mark</button><br />
+                </div>
+            </div>
+            <!--second video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo5">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Basic Hand Pattern
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video5">read more</button>
+                        <div class="modal fade modalSetting" id="video5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Basic Hand Pattern</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/uI_qcAycn4c" frameborder="0" allowfullscreen id="dislikeVideo5"></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date5">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description5">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source5">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date5" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description5" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source5" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uI_qcAycn4c" frameborder="0" allowfullscreen id="dislikeVideo6"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar5" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn5">Dislike</button>
+                    <span id="likedStar5" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn5">Mark</button><br />
+                </div>
+            </div>
+            <!--third video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo6">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Self-Defense 10-12
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video6">read more</button>
+                        <div class="modal fade modalSetting" id="video6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Self-Defense 10-12</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/Jk71LiTvdcQ" frameborder="0" allowfullscreen id="dislikeVideo7"></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date6">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description6">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source6">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date6" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description6" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source6" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jk71LiTvdcQ" frameborder="0" allowfullscreen id="dislikeVideo8"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar6" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn6">Dislike</button>
+                    <span id="likedStar6" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn6">Mark</button><br />
+                </div>
+            </div>
+       </div>
+    
+
+
+       <!--the third row-->
+       <div class="row">
+            <!--first video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo7">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Self-Defense 7-9
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video7">read more</button>
+                        <div class="modal fade modalSetting" id="video7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Self-Defense 7-9</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/goRIuz0J_AE" frameborder="0" allowfullscreen id="dislikeVideo9"></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date7">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description7">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source7">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date7" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description7" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source7" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/goRIuz0J_AE" frameborder="0" allowfullscreen id="dislikeVideo10"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar7" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn7">Dislike</button>
+                    <span id="likedStar7" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn7">Mark</button><br />
+                </div>
+            </div>
+            <!--second video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo8">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Self-Defense 4-6
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video8">read more</button>
+                        <div class="modal fade modalSetting" id="video8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Self-Defense 4-6</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/m1O6goBBi9Q" frameborder="0" allowfullscreen id="dislikeVideo11"></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date8">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description8">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source8">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date8" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description8" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source8" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m1O6goBBi9Q" frameborder="0" allowfullscreen id="dislikeVideo12"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar8" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn8">Dislike</button>
+                    <span id="likedStar8" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn8">Mark</button><br />
+                </div>
+            </div>
+            <!--third video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo9">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Self-Defense 1-3
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video9">read more</button>
+                        <div class="modal fade modalSetting" id="video9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Self-Defense 1-3</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/d9r6ZVf7Hu4" frameborder="0" allowfullscreen id="dislikeVideo13"></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date9">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description9">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source9">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date9" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description9" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source9" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d9r6ZVf7Hu4" frameborder="0" allowfullscreen id="dislikeVideo14"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar9" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn9">Dislike</button>
+                    <span id="likedStar9" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn9">Mark</button><br />
+                </div>
+            </div>
+         </div>
+
+       <!--the fourth row-->
+       <div class="row">
+            <!--first video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo10">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        One-Steps 28-30
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video10">read more</button>
+                        <div class="modal fade modalSetting" id="video10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">One-Steps 28-30</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/Y5XWTokc9bw" frameborder="0" allowfullscreen id="dislikeVideo15"></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date10">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description10">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source10">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date10" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description10" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source10" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y5XWTokc9bw" frameborder="0" allowfullscreen id="dislikeVideo15"></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar10" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn10">Dislike</button>
+                    <span id="likedStar10" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn10">Mark</button><br />
+                </div>
+            </div>
+            <!--second video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo11">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        One-Steps 25-27
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video11">read more</button>
+                        <div class="modal fade modalSetting" id="video11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">One-Steps 25-27</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/GaXgjlB-TEY" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date11">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description11">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source11">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date11" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description11" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source11" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GaXgjlB-TEY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar11" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn11">Dislike</button>
+                    <span id="likedStar11" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn11">Mark</button><br />
+                </div>
+            </div>
+            <!--third video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo12">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        One-Steps 22-24
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video12">read more</button>
+                        <div class="modal fade modalSetting" id="video12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">One-Steps 22-24</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/JX2-zUyytrA" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date12">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description12">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source12">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date12" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description12" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source12" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JX2-zUyytrA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar12" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn12">Dislike</button>
+                    <span id="likedStar12" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn12">Mark</button><br />
+                </div>
+            </div>
+         </div>
+
+
+       <!--the fifth row-->
+       <div class="row">
+            <!--first video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo13">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        One-Steps 19-21
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video13">read more</button>
+                        <div class="modal fade modalSetting" id="video13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Dr. Alfonso Break</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/uSohYNpkwOk" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date13">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description13">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source13">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date13" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description13" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source13" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uSohYNpkwOk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar13" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn13">Dislike</button>
+                    <span id="likedStar13" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn13">Mark</button><br />
+                </div>
+            </div>
+            <!--second video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo14">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        One-Steps 16-18
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video14">read more</button>
+                        <div class="modal fade modalSetting" id="video14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Dr. Alfonso Break</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/6Twljsl1rW4" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date14">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description14">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source14">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date14" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description14" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source14" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Twljsl1rW4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar14" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn14">Dislike</button>
+                    <span id="likedStar14" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn14">Mark</button><br />
+                </div>
+            </div>
+            <!--third video-->
+            <div class="col-lg-3 col-md-6 col-sm-12 panel panel-info video-row-one" id="changeVideo15">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        One-Steps 13-15
+                        <button class="btn btn-sm btn-info pull-right" type="button" data-toggle="modal" data-target="#video15">read more</button>
+                        <div class="modal fade modalSetting" id="video15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Dr. Alfonso Break</h4>
+                                    </div>
+                                    <div class="container modal-body">
+                                        <div class="col-lg-8 container-fluid well modalBodySetting">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="800" height="500" src="https://www.youtube.com/embed/GY5zV0aM2D0" frameborder="0" allowfullscreen></iframe>
+                                            </div>  
+                                        </div> 
+                                        <div class="container col-lg-4">
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a data-toggle="tab" href="#date15">Date</a></li>
+                                                <li><a data-toggle="tab" href="#description15">Description</a></li>
+                                                <li><a data-toggle="tab" href="#source15">Source</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                 <div id="date15" class="tab-pane fade in active">
+                                                     <p align="left">April, 20th, 2009</p>
+                                                 </div>
+                                                 <div id="description15" class="tab-pane fade">
+                                                     <p align="left">This is Dr. Louis Alfonso, 5th Dan Master</p>
+                                                 </div>
+                                                 <div id="source15" class="tab-pane fade">
+                                                     <p align="left">Youtube : Jin R. Hong</p>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GY5zV0aM2D0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="panel-footer panel-success">
+                    <span id="dislikeStar15" class="hidden"><span class="glyphicon glyphicon-thumbs-down text-danger"> Dislike</span></span>
+                    <button class="btn btn-sm btn-danger pull-right" type="button" id="dislikeBtn15">Dislike</button>
+                    <span id="likedStar15" class="hidden"><span class="glyphicon glyphicon-star text-danger">Liked</span></span>
+                    <button class="btn btn-sm btn-info pull-right" type="button" id="markBtn15">Mark</button><br />
+                </div>
+            </div>
+         </div>
+
+
+
+       </div>
+</div>
+
+        <hr>
+
+    </div>
+
+    
+    <div  class="panel panel-default footerSettings" id="zcc" >
+              
+              <div class="panel-body">
+                  <div class="panel-body">
+                      <div class="col-lg-7 col-md-6 col-sm-12">
+                      <p style="font-size:50px" class="text-center">please contact us:</p>
+                      </div>
+                      <div class="col-lg-5 col-md-6 col-sm-12">
+                         <div class="row">
+                             <br/>
+                             <a class="btn  btn-social btn-twitter">
+                             <span class="fa fa-twitter"></span>
+                                Twitter
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                                Facebook
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                                Instagram
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-google">
+                             <span class="fa fa-google"></span>
+                                Google
+                             </a>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 
+    })
+    </script>
+    <script>
+    //first like and dislike
+    $("#markBtn1").click(function(){
+        if($("#likedStar1").hasClass("hidden")){
+		   $("#likedStar1").removeClass("hidden");
+           $("#changeVideo1").removeClass("panel-info").addClass("panel-danger");
+           $("#changeFooter1").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar1").addClass("hidden");
+           $("#changeVideo1").removeClass("panel-danger").addClass("panel-info");
+           $("#changeFooter1").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    
+    $("#dislikeBtn1").click(function(){
+       if($("#dislikeStar1").hasClass("hidden")){
+		   $("#dislikeStar1").removeClass("hidden");
+           $("#changeVideo1").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter1").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo1").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar1").addClass("hidden");
+           $("#changeVideo1").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter1").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo1").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+    
+    //second like and dislike
+    $("#markBtn2").click(function(){
+        if($("#likedStar2").hasClass("hidden")){
+		   $("#likedStar2").removeClass("hidden");
+            $("#changeVideo2").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar2").addClass("hidden");
+           $("#changeVideo2").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn2").click(function(){
+       if($("#dislikeStar2").hasClass("hidden")){
+		   $("#dislikeStar2").removeClass("hidden");
+           $("#changeVideo2").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter2").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo2").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar2").addClass("hidden");
+           $("#changeVideo2").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter2").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo2").attr("src","https://www.youtube.com/embed/QurC6YYAWcY");
+	}
+    });
+
+    //3
+    $("#markBtn3").click(function(){
+        if($("#likedStar3").hasClass("hidden")){
+		   $("#likedStar3").removeClass("hidden");
+            $("#changeVideo3").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar3").addClass("hidden");
+           $("#changeVideo3").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn3").click(function(){
+       if($("#dislikeStar3").hasClass("hidden")){
+		   $("#dislikeStar3").removeClass("hidden");
+           $("#changeVideo3").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter3").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo3").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar3").addClass("hidden");
+           $("#changeVideo3").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter3").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo3").attr("src","https://www.youtube.com/embed/qGNW4nQXUrA");
+	}
+    });
+
+    //4
+    $("#markBtn4").click(function(){
+        if($("#likedStar4").hasClass("hidden")){
+		   $("#likedStar4").removeClass("hidden");
+            $("#changeVideo4").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar4").addClass("hidden");
+           $("#changeVideo4").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn4").click(function(){
+       if($("#dislikeStar4").hasClass("hidden")){
+		   $("#dislikeStar4").removeClass("hidden");
+           $("#changeVideo4").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter4").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo4").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar4").addClass("hidden");
+           $("#changeVideo4").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter4").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo4").attr("src","https://www.youtube.com/embed/nQ9tp5mGLPI");
+	}
+    });
+
+    //5
+    $("#markBtn5").click(function(){
+        if($("#likedStar5").hasClass("hidden")){
+		   $("#likedStar5").removeClass("hidden");
+            $("#changeVideo5").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar5").addClass("hidden");
+           $("#changeVideo5").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn5").click(function(){
+       if($("#dislikeStar5").hasClass("hidden")){
+		   $("#dislikeStar5").removeClass("hidden");
+           $("#changeVideo5").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter5").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo5").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar5").addClass("hidden");
+           $("#changeVideo5").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter5").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo5").attr("src","https://www.youtube.com/embed/uI_qcAycn4c");
+	}
+    });
+
+    //6
+    $("#markBtn6").click(function(){
+        if($("#likedStar6").hasClass("hidden")){
+		   $("#likedStar6").removeClass("hidden");
+            $("#changeVideo6").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar6").addClass("hidden");
+           $("#changeVideo6").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn6").click(function(){
+       if($("#dislikeStar6").hasClass("hidden")){
+		   $("#dislikeStar6").removeClass("hidden");
+           $("#changeVideo6").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter6").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo6").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar6").addClass("hidden");
+           $("#changeVideo6").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter6").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo6").attr("src","https://www.youtube.com/embed/Jk71LiTvdcQ");
+	}
+    });
+
+    //7
+    $("#markBtn7").click(function(){
+        if($("#likedStar7").hasClass("hidden")){
+		   $("#likedStar7").removeClass("hidden");
+            $("#changeVideo7").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar7").addClass("hidden");
+           $("#changeVideo7").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn7").click(function(){
+       if($("#dislikeStar7").hasClass("hidden")){
+		   $("#dislikeStar7").removeClass("hidden");
+           $("#changeVideo7").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter7").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo7").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar7").addClass("hidden");
+           $("#changeVideo7").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter7").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo7").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //8
+    $("#markBtn8").click(function(){
+        if($("#likedStar8").hasClass("hidden")){
+		   $("#likedStar8").removeClass("hidden");
+            $("#changeVideo8").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar8").addClass("hidden");
+           $("#changeVideo8").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn8").click(function(){
+       if($("#dislikeStar8").hasClass("hidden")){
+		   $("#dislikeStar8").removeClass("hidden");
+           $("#changeVideo8").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter8").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo8").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar8").addClass("hidden");
+           $("#changeVideo8").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter8").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo8").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //9
+    $("#markBtn9").click(function(){
+        if($("#likedStar9").hasClass("hidden")){
+		   $("#likedStar9").removeClass("hidden");
+            $("#changeVideo9").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar9").addClass("hidden");
+           $("#changeVideo9").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn9").click(function(){
+       if($("#dislikeStar9").hasClass("hidden")){
+		   $("#dislikeStar9").removeClass("hidden");
+           $("#changeVideo9").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter9").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo9").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar9").addClass("hidden");
+           $("#changeVideo9").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter9").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo9").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //10
+    $("#markBtn10").click(function(){
+        if($("#likedStar10").hasClass("hidden")){
+		   $("#likedStar10").removeClass("hidden");
+            $("#changeVideo10").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar10").addClass("hidden");
+           $("#changeVideo10").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn10").click(function(){
+       if($("#dislikeStar10").hasClass("hidden")){
+		   $("#dislikeStar10").removeClass("hidden");
+           $("#changeVideo10").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter10").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo10").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar10").addClass("hidden");
+           $("#changeVideo10").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter10").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo10").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //11
+    $("#markBtn11").click(function(){
+        if($("#likedStar11").hasClass("hidden")){
+		   $("#likedStar11").removeClass("hidden");
+            $("#changeVideo11").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar11").addClass("hidden");
+           $("#changeVideo11").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn11").click(function(){
+       if($("#dislikeStar11").hasClass("hidden")){
+		   $("#dislikeStar11").removeClass("hidden");
+           $("#changeVideo11").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter11").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo11").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar11").addClass("hidden");
+           $("#changeVideo11").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter11").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo11").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //12
+    $("#markBtn12").click(function(){
+        if($("#likedStar12").hasClass("hidden")){
+		   $("#likedStar12").removeClass("hidden");
+            $("#changeVideo12").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar12").addClass("hidden");
+           $("#changeVideo12").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn12").click(function(){
+       if($("#dislikeStar12").hasClass("hidden")){
+		   $("#dislikeStar12").removeClass("hidden");
+           $("#changeVideo12").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter12").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo12").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar12").addClass("hidden");
+           $("#changeVideo12").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter12").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo12").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //13
+    $("#markBtn13").click(function(){
+        if($("#likedStar13").hasClass("hidden")){
+		   $("#likedStar13").removeClass("hidden");
+            $("#changeVideo13").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar13").addClass("hidden");
+           $("#changeVideo13").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn13").click(function(){
+       if($("#dislikeStar13").hasClass("hidden")){
+		   $("#dislikeStar13").removeClass("hidden");
+           $("#changeVideo13").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter13").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo13").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar13").addClass("hidden");
+           $("#changeVideo13").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter13").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo13").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //14
+    $("#markBtn14").click(function(){
+        if($("#likedStar14").hasClass("hidden")){
+		   $("#likedStar14").removeClass("hidden");
+            $("#changeVideo14").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar14").addClass("hidden");
+           $("#changeVideo14").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn14").click(function(){
+       if($("#dislikeStar14").hasClass("hidden")){
+		   $("#dislikeStar14").removeClass("hidden");
+           $("#changeVideo14").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter14").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo14").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar14").addClass("hidden");
+           $("#changeVideo14").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter14").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo14").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    //15
+    $("#markBtn15").click(function(){
+        if($("#likedStar15").hasClass("hidden")){
+		   $("#likedStar15").removeClass("hidden");
+            $("#changeVideo15").removeClass("panel-info").addClass("panel-danger");
+	   }else{
+		   $("#likedStar15").addClass("hidden");
+           $("#changeVideo15").removeClass("panel-danger").addClass("panel-info");
+	}
+    });
+    $("#dislikeBtn15").click(function(){
+       if($("#dislikeStar15").hasClass("hidden")){
+		   $("#dislikeStar15").removeClass("hidden");
+           $("#changeVideo15").removeClass("panel-info").addClass("panel-default");
+           $("#changeFooter15").removeClass("panel-info").addClass("panel-default");
+           $("#dislikeVideo15").attr("src","dog.jpg");
+	   }else{
+		   $("#dislikeStar15").addClass("hidden");
+           $("#changeVideo15").removeClass("panel-default").addClass("panel-info");
+           $("#changeFooter15").removeClass("panel-default").addClass("panel-info");
+           $("#dislikeVideo15").attr("src","https://www.youtube.com/embed/hd-AM38L-o0");
+	}
+    });
+
+    $(".video-row-one").on("mouseover",function(){
+         $(this).attr("border","10px red");
+         $(this).children(".panel-heading, .panel-footer").css("background-color","#F4FA58");
+         $(this).children(".panel-body").css("background-color","#F5F6CE");
+         $(this).children(".panel-footer").children("button.btn-danger").removeClass("btn-danger").addClass("btn-success");
+         $(this).addClass("mouseOverSettings");
+         //console.log($(this).width());//315
+         //console.log($(this).height());//350
+         $(this).width("50%");
+         $(this).height("40%");
+         $(this).siblings().addClass("hidden");
+         $("nav").addClass("hidden");
+    }).on("mouseout",function(){
+         $(this).children(".panel-heading, .panel-footer").css("background-color","rgb(245, 245, 245)");
+         $(this).children(".panel-body").css("background-color","#FFFFFF");
+         $(this).children(".panel-footer").children("button.btn-success").removeClass("btn-success").addClass("btn-danger");
+         $(this).removeClass("mouseOverSettings");
+         //console.log($(this).width());//315
+         //console.log($(this).height());//328
+         $(this).width("315");
+         $(this).height("328");
+         $(this).siblings().removeClass("hidden");
+         $("nav").removeClass("hidden");
+    });
+    
+    </script>
+
+</body>
+
+</html>

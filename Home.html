@@ -1,0 +1,647 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!--social css-->
+<link href="bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!--end-->
+
+<style>
+      .newClockSettings{
+          position: absolute;
+          margin-left: 10px;
+          margin-top:10px;
+          width:150px;
+          height:100px;
+          background-color:#FFFFFF;
+          border:12px;
+          border-color: #D73814;
+          color:#FFFFFF;
+      }
+      .clockSettings{
+          position: absolute;
+          margin-left: 10px;
+          margin-top:10px;
+          width:150px;
+          height:100px;
+          background-color:#D79A34;
+          border:2px;
+          border-color: #D73814;
+          color:#4D5BBE;
+      }
+.spanSettings{
+    padding:0px;
+    margin: 0px;
+}
+      .modalSettings{
+          margin:100px;
+          margin-left: 150px;
+          margin-right:150px;
+      }
+     .doneSettings{
+         margin-right: 0px;
+         margin-top: 20px;
+     }
+     .glyphiconStyle{
+         color:#30cd00;
+     }
+     .largerWindow{
+        font-size: 40px;
+        font-weight: 5px;
+        background-color: #FFFFFF;
+        padding:0px;
+        margin:0px;
+     }
+    .btnBorder{
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+     #alertWords{
+         color:#FFFFFF;
+         font-size:13px;
+         position: absolute;
+         top:25px;
+         left:730px;
+     }
+     .hidden{
+        display: none;
+    }
+    .footerSettings{
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    #footer{   
+        margin-bottom: 0px;
+    }
+    .introduction{
+        margin:0px;
+        padding:0px;
+        font-size:20px;
+    }
+    .img-responsive {
+       display: inline-block;
+       height: auto;
+       max-width: 100%;
+    }
+    *{
+      font-family:"Times New Roman",Georgia,Serif;
+    }
+    .btn-glyphicon {
+       padding:8px;
+       background:#ffffff; 
+       margin-right:4px;
+    }
+    .icon-btn {
+       padding: 1px 15px 3px 2px; 
+       border-radius:50px;
+    }
+    .zcc{
+      padding: 15px;
+    }
+    #nav{
+      background-image: url(background+pattern+design+33.jpg);
+    }
+    .card-img-overlay {
+      background-color: #F1F8E0;
+      height: 50%;
+      top: 0px;
+    }
+
+    #larger-img {
+       height: 25%;
+    }    
+    .textOverlay {
+      padding-top: 40px;
+      padding-left: 20px;
+      text-align: left;
+      font-size: 20px;
+      color: #000000;
+    }
+    .battleText {
+      height: 55%;
+      top:50%;
+      position:relative;
+      background-color: #F3E2A9;
+      opacity: 0.6;
+    }
+    .btn3d {
+        position:relative;
+        top: -6px;
+        border:0;
+        transition: all 40ms linear;
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:2px;
+        margin-right:2px;
+    }
+    .btn3d:active:focus,
+    .btn3d:focus:hover,
+    .btn3d:focus {
+         -moz-outline-style:none;
+         outline:medium none;
+    }
+    .btn3d:active, .btn3d.active {
+         top:2px;
+    }
+    .btn3d.btn-white {
+         color: #666666;
+         box-shadow:0 0 0 0.5px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 1px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0,0,0,.2);
+         background-color:#fff;
+    }
+    .btn3d.btn-white:active, .btn3d.btn-white.active {
+         color: #666666;
+         box-shadow:0 0 0 0.5px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+         background-color:#fff;
+    }
+    .btn3d.btn-default {
+         color: #666666;
+         box-shadow:0 0 0 0.5px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 1px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,.2);
+         background-color:#f9f9f9;
+    }
+    .btn3d.btn-default:active, .btn3d.btn-default.active {
+         color: #666666;
+         box-shadow:0 0 0 0.5px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+         background-color:#f9f9f9;
+    }
+    .btn3d.btn-primary {
+         box-shadow:0 0 0 0.5px #417fbd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0,0,0,0.5);
+         background-color:#4274D7;
+    }
+    .btn3d.btn-primary:active, .btn3d.btn-primary.active {
+         box-shadow:0 0 0 0.5px #417fbd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+         background-color:#4274D7;
+    }
+    .btn3d.btn-success {
+         box-shadow:0 0 0 0.1px #31c300 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 2px 0 0 #5eb924, 0 8px 8px 1px rgba(0,0,0,0.5);
+         background-color:#78d739;
+    }
+    .btn3d.btn-success:active, .btn3d.btn-success.active {
+         box-shadow:0 0 0 0.5px #30cd00 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+         background-color: #78d739;
+    }
+    .btn3d.btn-info {
+         box-shadow:0 0 0 0.5px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
+         background-color:#39B3D7;
+    }
+.btn3d.btn-info:active, .btn3d.btn-info.active {
+    box-shadow:0 0 0 0.5px #00a5c3 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #39B3D7;
+}
+.btn3d.btn-warning {
+    box-shadow:0 0 0 0.5px #d79a47 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #D79A34, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#FEAF20;
+}
+.btn3d.btn-warning:active, .btn3d.btn-warning.active {
+    box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #FEAF20;
+}
+.btn3d.btn-danger {
+    box-shadow:0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#D73814;
+}
+.btn3d.btn-danger:active, .btn3d.btn-danger.active {
+    box-shadow:0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #D73814;
+}
+.btn3d.btn-magick {
+    color: #fff;
+    box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #9823d5, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#bb39d7;
+}
+.btn3d.btn-magick:active, .btn3d.btn-magick.active {
+    box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #bb39d7;
+}
+
+
+</style>
+
+ </head>
+ <body>
+     <hr />
+         <div class="jumbotron">
+             <br /><br />
+             <div class="row">
+                <a data-toggle="collapse" data-parent="#accordion" >
+                    <font size="20" face="Verdana">
+                         Welcome! Hong's World Class Taekwondo Center &nbsp&nbsp
+                    </font>
+                </a>
+                <a class="btn icon-btn btn-success btn-md btn3d" data-toggle="collapse" data-parent="#accordion" href="#jumbotronPhoto">
+                    <span class="glyphicon btn-glyphicon glyphicon-chevron-down img-circle text-primary"></span>&nbsp&nbspcollapse
+                </a>
+             </div>
+                <div class="container-fluid well ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       <img id="jumbotronPhoto"  src="10013913_969677329721791_8758402770288239965_n.jpg">
+                    </div>
+                </div>
+             
+        </div>
+        <nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+               <div class="col-lg-8 col-md-12 col-sm-12 ">
+                   <div class="navbar-header ">
+                      <a href="navbar-brand" class="text-center" ></a>
+                   </div>
+                   <div>
+                       <ul class=" nav navbar-nav  nav-pills ">
+                           <li class="dropdown btn-default btn-md btn3d">
+                               <a href="Events/events.html">
+                                   <span style="color:blue"><b> Events-list</b></span> 
+                               </a>
+                           </li>
+                           <li class="dropdown btn-default btn-md btn3d">
+                               <a href="about us/aboutus.html" >
+                                   <span style="color:blue"><b> About Us</b></span> 
+                               </a>
+                           </li>
+                           <li class="dropdown btn-default btn-md btn3d">
+                               <a href="Photos/Photos1.html">
+                                   <span style="color:blue"><b>Photo-list</b></span>
+                               </a>
+                           </li>
+                           <li class="dropdown btn-default btn-md btn3d">
+                               <a href="Videos/Videos.html">
+                                   <span style="color:blue"><b>video-list</b></span> 
+                               </a>
+                           </li>
+                           <li class=" dropdown btn-default btn-md btn3d">
+                               <a href="program/Program.html">
+                                   <span style="color:blue"><b>Program-List</b></span> 
+                               </a>
+                           </li>
+                           <Span class="hidden" id="alertWords">Please type in something!</span>
+                       </ul>
+                   </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                 <form class="navbar-form navbar-left" role="search">
+                     <div class="form-group" >
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input type="text" class="form-control" placeholder="Search" id="search">
+                        <button type="submit" class="btn btn-default btn3d">Submit</button>
+                     </div>
+                 </form>
+                 <div class="row">
+                    <form class="navbar-form navbar-left inline-block" role="search">
+                        <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                            New here?!&nbsp&nbsp&nbsp&nbsp
+                        <button type="submit" class="btn btn-primary btn-xs btn3d btnBorder" href=" "><span class="glyphicon glyphicon-hand-right"></span> Register</button>
+                        </div>
+                    </form>
+                    <form class="navbar-form navbar-left inline-block" role="search">
+                        <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                            Have a account?!&nbsp&nbsp
+                            <button type="submit" class="btn btn-primary btn-xs  btn3d btnBorder" href=" "><span class="glyphicon glyphicon-user"></span> Login</button>
+                       </div>
+                    </form>
+                 </div>
+              </div>
+             
+        </div>
+    </nav>
+    <div class="zcc">       
+       <div class="container-fluid" >
+           <div class="well">
+               <font size="10" face="Verdana">INTRODUCTION</font>&nbsp&nbsp
+               <a class="btn icon-btn btn-success btn-md btn3d" data-toggle="collapse" data-parent="#accordion" href="#story">
+                   <span class="glyphicon btn-glyphicon glyphicon-chevron-down img-circle text-primary"></span>&nbsp&nbspcollapse
+               </a>
+               <div id="story" class="introduction">
+                   <span class="glyphicon glyphicon-ok-sign hidden glyphiconStyle" id="singelOk"></span>
+                   <span id="no1"> &nbsp&nbsp&nbsp&nbsp We are a premier Martial Arts School located in North Kingstown, RI. Our staff of professional Instructors teach students in both Traditional and Competitive Taekwondo. 
+                       Grand Master Hong's philosophy is that Taekwondo is much more than self-defense. He teaches that its foundation is about mental discipline, confidence, balance, and harmony. Gaining strength and energy in these qualities will not only make one a good student, but also a better person in life.
+                   </span>
+                   <div class="container-fluid well hidden spanSettings">
+                      <p class="largerWindow">&nbsp&nbsp&nbsp&nbsp We are a premier Martial Arts School located in North Kingstown, RI. Our staff of professional Instructors teach students in both Traditional and Competitive Taekwondo. 
+                          Grand Master Hong's philosophy is that Taekwondo is much more than self-defense. He teaches that its foundation is about mental discipline, confidence, balance, and harmony. Gaining strength and energy in these qualities will not only make one a good student, but also a better person in life.
+                      </p>
+                      <button class="btn btn-danger btn-md pull-right">Done</button>
+                   </div><br /><br />
+
+                   <!--hidden modal when all three are done-->
+                   <div class="modal fade modalSettings hidden" id="hiddenThreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title text-center" id="myModalLabel">Thanks!</h4>
+                              </div>
+                              <div class="container-fluid well modal-body">
+                                  <div class="col-lg-7 col-md-12">
+                                      <img src="dogHome.jpg">
+                                  </div>
+                                  <div class="col-lg-5 col-md-12">
+                                      <h1>Thanks for browsing!</h1>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                     <button type="button" class="btn btn-info btnCloseModal" data-dismiss="modal">close</button>
+                              </div>
+                          </div>
+                   </div>
+
+                 <!--end of this modal-->
+
+                 <!--第一个span-->
+                 <div>
+                   <span class="glyphicon glyphicon-ok-sign  glyphiconStyle hidden" id="span-1" ></span>
+                   <span class="label label-info">  HOURS:</span>&nbspclock  12:00 - 8:30<br /><br />
+                   <div class="container-fluid well hidden spanSettings">
+                       <p class="largerWindow">
+                       <span class="label label-success">  HOURS:</span>&nbspclock  12:00 - 8:30
+                       <button class="btn btn-danger btn-sm pull-right doneSettings">Done</button>
+                       </p>
+                   </div>
+                 </div>
+                 <!--第二个span-->
+                <div>
+                   <span class="glyphicon glyphicon-ok-sign hidden glyphiconStyle hidden" id="span-2"></span>
+                   <span class="label label-info"> BUS:</span> RIPTA Route #14,Post Rd. & Frenchtown<br /><br />
+                   <div class="container-fluid well hidden spanSettings">
+                       <p class="largerWindow">
+                       <span class="label label-success">  BUS:</span>RIPTA Route #14,Post Rd. & Frenchtown
+                       <button class="btn btn-danger btn-sm pull-right doneSettings">Done</button>
+                       </p>
+                   </div>
+                 </div>
+                 <!--第三个span-->
+                <div>
+                   <span class="glyphicon glyphicon-ok-sign hidden glyphiconStyle hidden" id="span-3" ></span>
+                   <span class="label label-info">  INFORMATION:</span> We are a premier Martial Arts School located in North Kingstown, RI. Our staff of professional Instructors teach students in both Traditional and Competitive Taekwondo. <br /><br />
+                   <div class="container-fluid well hidden spanSettings">
+                       <p class="largerWindow">
+                       <span class="label label-success">  INFORMATION:</span>We are a premier Martial Arts School located in North Kingstown, RI. Our staff of professional Instructors teach students in both Traditional and Competitive Taekwondo.
+                       <button class="btn btn-danger btn-sm pull-right doneSettings">Done</button>
+                       </p>
+                   </div>
+                 </div>
+                 <!--第四个span-->
+                <div>
+                   <span class="glyphicon glyphicon-ok-sign hidden glyphiconStyle hidden" id="span-4" ></span>
+                   <span class="label label-info">  ADDITIONAL CONTACT INFO:</span>  <a href="mailto:#">hongsritkd@gmail.com</a>     or     <a href="mailto:#">http://www.ritkd.com/</a><br /><br />
+                   <div class="container-fluid well hidden spanSettings">
+                       <p class="largerWindow">
+                       <span class="label label-success">  ADDITIONAL CONTACT INFO:</span><a href="mailto:#">hongsritkd@gmail.com</a>     or     <a href="mailto:#">http://www.ritkd.com/</a>
+                       <button class="btn btn-danger btn-sm pull-right doneSettings">Done</button>
+                       </p>
+                   </div>
+                 </div>
+                 <!--第五个span--> 
+                <div>
+                   <span class="glyphicon glyphicon-ok-sign hidden glyphiconStyle hidden" id="span-5"></span>
+                   <span class="label label-info">CONTACTS:</span>Check out the dojang at 5955 Post Road or call us at (401) 885-4900<br /><br />
+                   <div class="container-fluid well hidden spanSettings">
+                       <p class="largerWindow">
+                       <span class="label label-success">  CONTACTS:</span>Check out the dojang at 5955 Post Road or call us at (401) 885-4900
+                       <button class="btn btn-danger btn-sm pull-right doneSettings">Done</button>
+                       </p>
+                   </div>
+                 </div>
+                <!--第六个span-->
+                <div>
+                   <span class="glyphicon glyphicon-ok-sign hidden glyphiconStyle hidden" id="span-6"></span>
+                   <span class="label label-info">ADDRESS:</span>Address:5955 Post Rd, next to Job Lot North Kingstown, Rhode Island&nbsp&nbsp&nbsp&nbsp<a href="https://www.bing.com/mapspreview?v=2&pc=FACEBK&mid=8100&rtp=~pos.41.6333223_-71.4682037_Hong%27s+World+Class+Taekwondo+Center&cp=41.6333223~-71.4682037&lvl=16&sty=r&   rtop=0~0~0~&mode=D&FORM=FBKPL6&mkt=en-US">Please click here!</a><br /><br /><br />
+                   <div class="container-fluid well hidden spanSettings">
+                       <p class="largerWindow">
+                       <span class="label label-success">  HOURS:</span>&nbspclock  12:00 - 8:30
+                       <button class="btn btn-danger btn-sm pull-right doneSettings">Done</button>
+                       </p>
+                   </div>
+                 </div>
+
+               </div>    
+          </div>
+      </div>
+    </div>
+    <div  class="panel panel-default footerSettings" id="footer" >
+        
+          <div class="container-fluid well clockSettings" id="clock-1">
+               <div class="date">
+                   2000-01-01
+               </div>    
+               <div class="clock">
+                   01:01:01 am
+               </div>
+          </div>
+        
+        
+            <div class="container-fluid well hidden newClockSettings" id="clock-2">
+               <span class="date">
+                   2000-01-01
+               </span>    
+               <span class="clock">
+                   01:01:01 am
+               </span>
+            </div>
+        
+              <div class="panel-body">
+                  <div class="panel-body">
+                      <div class="col-lg-7 col-md-6 col-sm-12">
+                      <p style="font-size:50px" class="text-center">please contact us:</p>
+                      </div>
+                      <div class="col-lg-5 col-md-6 col-sm-12">
+                         <div class="row">
+                             <br/>
+                             <a class="btn  btn-social btn-twitter">
+                             <span class="fa fa-twitter"></span>
+                                Twitter
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                                Facebook
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                                Instagram
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-google">
+                             <span class="fa fa-google"></span>
+                                Google
+                             </a>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+    </div>
+     
+
+
+    
+</body>
+
+<script>
+  $("#story p").on("mouseover",function(){
+     $("#story").load("Events/events.html");
+     //console.log("working!");
+  }).on("mouseout",function(){
+
+  });
+
+$("#search").focus(function(){
+  $("#alertWords").removeClass("hidden");
+  console.log("remove!");
+}).blur(function(){
+  $("#alertWords").addClass("hidden");
+  console.log("add!");
+});
+
+//p click event
+$("#no1").click(function(){
+    $(this).next("div").removeClass("hidden");
+   console.log("focus!");
+});
+$("button.pull-right").click(function(){
+    //$(this).parent().addClass("hidden");
+    $(this).parent().fadeOut(1000);
+    $("#singelOk").removeClass("hidden");
+});
+
+//span click event
+$("span.label-info").click(function(){
+   $(this).parent().children("div.container-fluid").removeClass("hidden");
+});
+
+$("button.btn-sm").click(function(){
+   //$(this).parent().parent().addClass("hidden");
+   $(this).parent().parent().fadeOut(2000);
+   $(this).parent().parent().siblings("span.glyphiconStyle").removeClass("hidden"); 
+   $(this).parent().parent().siblings("span.label-info").removeClass("label-info").addClass("label-success");
+   //console.log($(this).parent().parent().siblings().length);//4
+   //console.log($(this).parent().parent().siblings("span.glyphicon").length); //1
+   if((!$("#singelOk").hasClass("hidden")) && (!$("#span-1").hasClass("hidden")) && (!$("#span-2").hasClass("hidden"))&&(!$("#span-3").hasClass("hidden"))&&(!$("#span-4").hasClass("hidden"))&&(!$("#span-5").hasClass("hidden"))&&(!$("#span-6").hasClass("hidden"))){
+       $(".btn-danger").attr("data-toggle","modal").attr("data-target","#hiddenThreeModal"); 
+       $("#hiddenThreeModal").removeClass("hidden");
+       console.log("all done!");
+   }
+});
+
+$("#jumbotronPhoto").click(function(){
+   $(this).parent().siblings("a").children("font").text("haha!,the photo can not be zoomed!!")
+   //console.log($(this).parent().siblings("a").length);
+   //console.log("clicked");
+
+});
+function updateClock ( )
+ 	{
+ 	var currentTime = new Date ( );
+  	var currentHours = currentTime.getHours ( );
+  	var currentMinutes = currentTime.getMinutes ( );
+  	var currentSeconds = currentTime.getSeconds ( );
+    var currentDays = currentTime.getDay();
+    var currentMonths = currentTime.getMonth();
+    var currentYears = currentTime.getYear();
+
+  	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+  	currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+
+  	var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+  	currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+  	currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+    currentDays = (currentDays < 10 ? "0" : "") + currentDays;
+    currentMonths = (currentMonths < 10 ? "0" : "") + currentMonths;
+    currentYears = currentYears -100 ; 
+
+  	var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    var currentDate = "20" + currentYears + "-" + currentMonths + "-" + currentDays;  
+  	
+  	$(".date").html(currentDate);
+   	$(".clock").html(currentTimeString);
+   	  	
+ }
+
+$(document).ready(function()
+{
+   setInterval('updateClock()', 1000);
+});
+
+$("#clock-1").on("mouseover",function(){
+    console.log("mouseover!");
+    $("#clock-1").addClass("hidden");
+    $("#clock-2").removeClass("hidden");
+}).on("mouseout",function(){
+    $("#clock-2").on("mouseover",function(){
+       // do nothing!
+       console.log("do nothing!");
+    }).on("mouseout",function(){
+       $("#clock-2").addClass("hidden");
+       $("#clock-1").removeClass("hidden");
+    });
+});
+
+$(".btn-social").click(function(){
+    //$(this).animate({top:"-=10px"},2000);
+    //$(this).animate({height:"+=50px"},2000);
+    console.log($(this).height());//
+    $(this).animate({width:"+=10px",top:"-=10px",height:"+=50px"},2000);
+    console.log("animation!");
+    console.log($(this).height());
+    var btnList = document.getElementsByClassName("btn-social"); 
+    
+    var sum = 0;
+    console.log(btnList.length);
+    console.log(btnList[0].style.height);
+    console.log(btnList[1].style.height);
+    console.log(btnList[2].style.height);
+    console.log(btnList[3].style.height);
+    for(var i =0 ; i < btnList.length ; i++){
+        if(btnList[i].style.height != "34px"){
+           sum = sum + 1;
+           console.log(btnList[i].style.length);
+           console.log(sum);
+        }
+    }
+    if(btnList[3].style.height >= "34px" && btnList[2].style.height >= "34px" && btnList[1].style.height >="34px" &&　btnList[0].style.height !="34px"){
+        console.log("all done!");
+        $(".btn-social").attr("data-toggle","modal").attr("data-target","#hiddenThreeModal");
+        $("#hiddenThreeModal").removeClass("hidden");
+    }
+});
+
+/*$(".btn-social").click(function(){
+    $(this).siblings().each(function(){
+        console.log($(this).height());
+    });
+});*/
+
+
+
+
+
+
+
+
+</script>
+
+
+
+    </html>
+   
+
+  
+
+
+    
+
+
+          
+
+
+
+                
+         

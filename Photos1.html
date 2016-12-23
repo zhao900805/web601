@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>4 Col Portfolio - Start Bootstrap Template</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Photos\lightbox2-master\src\css/lightbox.css" rel="stylesheet"> <!--lightbox-->
+    <link href="css/4-col-portfolio.css" rel="stylesheet">
+    <!--social css-->
+    <link href="../bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--end--> 
+    <style>
+    .submitModalSettings{
+       margin:250px;
+       font-size:30px;
+    }
+    .btnBorder{
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+    #backBtn{
+       position: absolute;
+       top: 25px;
+       left: 300px;
+   }
+    nav{
+      background-image: url(background+pattern+design+33.jpg);
+    }
+    .modal-header ,.modal-footer{
+       background-color:#BDBDBD; 
+    }
+    #zcc{
+        margin-bottom: 0px;
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    .marked{
+        background-color:#F2F5A9;
+        border-style:solid;
+        border-color: #FFFF00;
+    }
+    .markedWords{
+        color: #FFFF00;
+    }
+    .modalShape{
+        margin:100px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    #titleSettings{
+        font-style: italic;
+        font-size: 50px;
+        font-family: Georgia;
+        color:#FFFFFF;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="navbar-header col-md-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="titleSettings">Photos Page</a>
+                <a href="../Home.html" type="button"><button class="btn btn-danger btn-xs btnBorder" id="backBtn" href="../Home.html">Go back</button></a>
+            </div>  
+              <div class=" row col-md-3">
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew here?!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm btn3d btnBorder" href=" "><span class="glyphicon glyphicon-hand-right"></span> Register</button>
+                  </div>
+                </form>
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHave a account?!&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm  btn3d btnBorder" href=" "><span class="glyphicon glyphicon-user"></span> Login</button>
+                  </div>
+                </form>
+             </div>           
+        </div>        
+    </nav>
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Photos list
+                    <small>Photos of activities</small>
+                </h1>
+            </div>
+        </div>
+        <div class="container-fluid well" >
+          <div class="row" >
+              <!--first photo-->
+             <div class="col-md-4 portfolio-item " id="photoMarked1">
+                <a href="1.jpg" data-lightbox="image-1" data-title="My caption">
+                    <img class="img-responsive" src="1.jpg" alt="">
+                </a>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control " id="comment1" disabled>
+                </div>
+                
+                <button class="btn btn-md btn-info" id="markBtn1">Mark</button>
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#commentBtn1">Comment</button>
+                <span class="hidden">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                       Marked
+                </span>
+                <div class="modal fade modalShape" id="commentBtn1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-content">              
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                        </div>
+                        <div class="container modal-body">
+                            <div class="form-group">
+                                <label for="textArea1">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textArea1"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                            <button type="button" class="btn btn-success btn-md" id="submit1"  data-dismiss="modal" data-toggle="modal" data-target="#submitModal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                              <!--submit modal-->
+                                     <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                         <div class="modal-content submitModalSettings">
+                                             <div class="modal-header" style="background-color:#2EFEC8;font-size:20px">
+                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                     <h4 class="modal-title text-center" id="myModalLabel">Thanks!</h4>
+                                             </div>
+                                             <div class="container modal-body">
+                                                 <p >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYou have sumbmited successfully!</p>
+                                             </div>
+                                        </div>
+                                     </div>
+                            <!--end of sumbmit modal-->
+
+            <!--second photo-->
+            <div class="col-md-4 portfolio-item" id="photoMarked2">
+                <a href="2.jpg" data-lightbox="image-1" data-title="My caption">
+                    <img class="img-responsive" src="2.jpg" alt="">
+                </a>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control " id="comment2" disabled>
+                </div>
+                
+                <button class="btn btn-md btn-info" id="markBtn2">Mark</button>
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#commentBtn2">Comment</button>
+                <span class="hidden">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       &nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                       Marked
+                </span>
+                <div class="modal fade modalShape" id="commentBtn2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-content">              
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                        </div>
+                        <div class="container modal-body">
+                            <div class="form-group">
+                                <label for="textArea2">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textArea2"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                            <button type="button" class="btn btn-success btn-md" id="submit2"  data-dismiss="modal" data-toggle="modal" data-target="#submitModal">Submit</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!--third photo-->
+            <div class="col-md-4 portfolio-item" id="photoMarked3">
+                <a href="3.jpg" data-lightbox="image-1" data-title="My caption">
+                    <img class="img-responsive" src="3.jpg" alt="">
+                </a>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control " id="comment3" disabled>
+                </div>
+                
+                <button class="btn btn-md btn-info" id="markBtn3">Mark</button>
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#commentBtn3">Comment</button>
+                <span class="hidden">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                       Marked
+                </span>
+                <div class="modal fade modalShape" id="commentBtn3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-content">              
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                        </div>
+                        <div class="container modal-body">
+                            <div class="form-group">
+                                <label for="textArea3">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textArea3"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                            <button type="button" class="btn btn-success btn-md" id="submit3"  data-dismiss="modal" data-toggle="modal" data-target="#submitModal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <!--forth photo-->
+            <div class="col-md-4 portfolio-item" id="photoMarked4">
+                <a href="4.jpg" data-lightbox="image-1" data-title="My caption">
+                    <img class="img-responsive" src="4.jpg" alt="">
+                </a>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control " id="comment4" disabled>
+                </div>
+                
+                <button class="btn btn-md btn-info" id="markBtn4">Mark</button>
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#commentBtn4">Comment</button>
+                <span class="hidden">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                       Marked
+                </span>
+                <div class="modal fade modalShape" id="commentBtn4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-content">              
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                        </div>
+                        <div class="container modal-body">
+                            <div class="form-group">
+                                <label for="textArea4">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textArea4"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                            <button type="button" class="btn btn-success btn-md" id="submit4"  data-dismiss="modal" data-toggle="modal" data-target="#submitModal">Submit</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!--fifth photo-->
+            <div class="col-md-4 portfolio-item" id="photoMarked5">
+                <a href="5.jpg" data-lightbox="image-1" data-title="My caption">
+                    <img class="img-responsive" src="5.jpg" alt="">
+                </a>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control " id="comment5" disabled>
+                </div>
+                
+                <button class="btn btn-md btn-info" id="markBtn5">Mark</button>
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#commentBtn5">Comment</button>
+                <span class="hidden">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                       Marked
+                </span>
+                <div class="modal fade modalShape" id="commentBtn5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-content">              
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                        </div>
+                        <div class="container modal-body">
+                            <div class="form-group">
+                                <label for="textArea5">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textArea5"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                            <button type="button" class="btn btn-success btn-md" id="submit5"  data-dismiss="modal" data-toggle="modal" data-target="#submitModal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--sixth photo-->
+            <div class="col-md-4 portfolio-item" id="photoMarked6">
+                <a href="6.jpg" data-lightbox="image-1" data-title="My caption">
+                    <img class="img-responsive" src="6.jpg" alt="">
+                </a>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control " id="comment6" disabled>
+                </div>
+                
+                <button class="btn btn-md btn-info" id="markBtn6">Mark</button>
+                <button class="btn btn-md btn-success" data-toggle="modal" data-target="#commentBtn6">Comment</button>
+                <span class="hidden">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                       Marked
+                </span>
+                <div class="modal fade modalShape" id="commentBtn6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-content">              
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                        </div>
+                        <div class="container modal-body">
+                            <div class="form-group">
+                                <label for="textArea6">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textArea6"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">close</button>
+                            <button type="button" class="btn btn-success btn-md" id="submit6"  data-dismiss="modal" data-toggle="modal" data-target="#submitModal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+        
+
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="Photos3.html">&laquo;</a>
+                    </li>
+                    <li>
+                        <a href="Photos1.html">1</a>
+                    </li>
+                    <li>
+                        <a href="Photos2.html">2</a>
+                    </li>
+                    <li>
+                        <a href="Photos3.html">3</a>
+                    </li>
+                    <li>
+                        <a href="Photos2.html">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+<div  class="panel panel-default footerSettings" id="zcc" >
+              
+              <div class="panel-body">
+                  <div class="panel-body">
+                      <div class="col-lg-7 col-md-6 col-sm-12">
+                      <p style="font-size:50px" class="text-center">please contact us:</p>
+                      </div>
+                      <div class="col-lg-5 col-md-6 col-sm-12">
+                         <div class="row">
+                             <br/>
+                             <a class="btn  btn-social btn-twitter">
+                             <span class="fa fa-twitter"></span>
+                                Twitter
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                                Facebook
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                                Instagram
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-google">
+                             <span class="fa fa-google"></span>
+                                Google
+                             </a>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+    </div>
+   
+    <script src="js/jquery.js"></script>
+    <script>
+    //1
+    $("#commentBtn1").click(function(){
+        $("#submit1").click(function(){
+         if($("#textArea1").val() != null){
+            $("#comment1").val($("#textArea1").val());
+         }
+        });
+    });
+    $("#markBtn1").click(function(){
+        if($("#photoMarked1").hasClass("marked")){
+           $("#photoMarked1").removeClass("marked");
+        }else{
+           $("#photoMarked1").addClass("marked"); 
+        }
+        $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+    })
+    //2
+    $("#commentBtn2").click(function(){
+        $("#submit2").click(function(){
+         if($("#textArea2").val() != null){
+            $("#comment2").val($("#textArea2").val());
+         }
+        });
+    });
+    $("#markBtn2").click(function(){
+        if($("#photoMarked2").hasClass("marked")){
+           $("#photoMarked2").removeClass("marked");
+        }else{
+           $("#photoMarked2").addClass("marked"); 
+        }
+        $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+    })
+    //3
+    $("#commentBtn3").click(function(){
+        $("#submit3").click(function(){
+         if($("#textArea3").val() != null){
+            $("#comment3").val($("#textArea3").val());
+         }
+        });
+    });
+    $("#markBtn3").click(function(){
+        if($("#photoMarked3").hasClass("marked")){
+           $("#photoMarked3").removeClass("marked");
+        }else{
+           $("#photoMarked3").addClass("marked"); 
+        }
+        $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+    })
+    //4
+    $("#commentBtn4").click(function(){
+        $("#submit4").click(function(){
+         if($("#textArea4").val() != null){
+            $("#comment4").val($("#textArea4").val());
+         }
+        });
+    });
+    $("#markBtn4").click(function(){
+        if($("#photoMarked4").hasClass("marked")){
+           $("#photoMarked4").removeClass("marked");
+        }else{
+           $("#photoMarked4").addClass("marked"); 
+        }
+        $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+    })
+    //5
+    $("#commentBtn5").click(function(){
+        $("#submit5").click(function(){
+         if($("#textArea5").val() != null){
+            $("#comment5").val($("#textArea5").val());
+         }
+        });
+    });
+    $("#markBtn5").click(function(){
+        if($("#photoMarked5").hasClass("marked")){
+           $("#photoMarked5").removeClass("marked");
+        }else{
+           $("#photoMarked5").addClass("marked"); 
+        }
+        $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+    })
+    //6
+    $("#commentBtn6").click(function(){
+        $("#submit6").click(function(){
+         if($("#textArea6").val() != null){
+            $("#comment6").val($("#textArea6").val());
+         }
+        });
+    });
+    $("#markBtn6").click(function(){
+        if($("#photoMarked6").hasClass("marked")){
+           $("#photoMarked6").removeClass("marked");
+        }else{
+           $("#photoMarked6").addClass("marked"); 
+        }
+        $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+    })
+
+    </script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+
+         <script src="js/jquery.js"></script>
+    <script>
+        $("div.portfolio-item").on("mouseover",function(){
+            console.log($(this).css("background-color"));
+            $(this).css("background-color","#F4FA58");
+        }).on("mouseout",function(){
+            $(this).css("background-color","rgba(0, 0, 0, 0)");
+        }); 
+
+        $("botton.btn-info").click(function(){
+            console.log("working!");
+            $(this).siblings("span").removeClass("hidden").addClass("markedWords");
+        });
+
+
+    </script>     
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Photos\lightbox2-master\src\js/lightbox.js"></script>
+</body>
+</html>

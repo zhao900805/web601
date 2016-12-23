@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Half Slider - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+    <!--social css-->
+    <link href="../bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--end--> 
+    <style>
+    .modalSettings{
+        margin:100px;
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .btnBorder{
+        border-color:#FFFFFF;
+        border-width:1px;
+    }
+    .hold{
+        border:1px;
+    }
+    #backBtn{
+       position: absolute;
+       top: 25px;
+       left: 350px;
+    }
+    nav{
+      background-image: url(background+pattern+design+33.jpg);
+    }
+    .modal-header ,.modal-footer{
+       background-color:#BDBDBD; 
+    }
+    #zcc{
+        margin-bottom: 0px;
+        font-size:20px;
+        background-image: url(footerBackground.jpg);
+    }
+    .hidden{
+        display: none;
+    }
+    .btnSetting{
+        width: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .btnChange{
+        height: 50px;
+    }
+    .carouselSetting{
+        margin-bottom: 0px;
+        margin-left: 0px;
+        
+    }
+    .panel-footer{
+        height:45px;
+    }
+    .hudge{
+        width:900px;
+        height:400px;
+    }
+    .zoomFont{
+        font-family: Georgia;
+        font-size:30px;
+        margin:80px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    .mouseOverSettings{
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #titleSettings{
+        font-style: italic;
+        font-size: 50px;
+        font-family: Georgia;
+        color:#FFFFFF;
+    }
+    </style>
+    </head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="navbar-header col-md-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="titleSettings">Program Page</a>
+                <a href="../Home.html" type="button"><button class="btn btn-danger btn-xs btnBorder" id="backBtn" href="../Home.html">Go back</button></a>
+            </div>  
+              <div class=" row col-md-3">
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew here?!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm btn3d btnBorder" href=" "><span class="glyphicon glyphicon-hand-right"></span> Register</button>
+                  </div>
+                </form>
+                <form class="navbar-form navbar-left inline-block col-md-3" role="search">
+                  <div class="form-group" style="color:#FFFFFF;font-family: Georgia;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHave a account?!&nbsp&nbsp
+                    <button type="submit" class="btn btn-primary btn-sm  btn3d btnBorder" href=" "><span class="glyphicon glyphicon-user"></span> Login</button>
+                  </div>
+                </form>
+             </div>           
+        </div>        
+    </nav><br /><br /><br /><br /><br />
+    <!--top body-->
+    
+    <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="container-fluid">   
+                <p class="lead">Program List</p>
+                <div class="btn-group-vertical btnSetting ">
+                    <button type="button" class="btn btn-default btnChange" id="btn1">Family Self Defense & Fitness</button>
+                    <button type="button" class="btn btn-default btnChange" id="btn2">Children's Programs</button>
+                    <button type="button" class="btn btn-default btnChange" id="btn3">Teens Self Defense & Fitness</button>
+                    <button type="button" class="btn btn-default btnChange" id="btn4">Adult Self-Defense And Fitness</button>
+                </div>
+            </div>
+            </div>
+
+            <!--hidden modal when all three are done-->
+                   <div class="modal fade modalSettings hidden" id="hiddenThreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title text-center" id="myModalLabel">Thanks!</h4>
+                              </div>
+                              <div class="container-fluid well modal-body">
+                                  <div class="col-lg-7 col-md-12">
+                                      <img src="../dogProgram.jpg">
+                                  </div>
+                                  <div class="col-lg-5 col-md-12">
+                                      <h1>Thanks for browsing!</h1>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                     <button type="button" class="btn btn-info btnCloseModal" data-dismiss="modal">close</button>
+                              </div>
+                          </div>
+                   </div>
+
+                 <!--end of this modal-->
+
+            <!--first carousel-->
+            <div class="col-lg-9 col-md-12 container-fluid well carouselSetting" id="carousel1">
+                <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="1-1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="1-2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="1-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                </div>
+            </div>
+            <!--second carousel-->
+            <div class="col-lg-9 col-md-12 container-fluid well hidden carouselSetting" id="carousel2">
+                <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="2-1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="2-2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="2-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                </div>
+            </div>
+            <!--third carousel-->
+            <div class="col-lg-9 col-md-12 container-fluid well hidden carouselSetting" id="carousel3">
+                <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="3-1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="3-2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="3-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                </div>
+            </div>
+            <!--forth carousel-->
+            <div class="col-lg-9 col-md-12 container-fluid well hidden carouselSetting" id="carousel4">
+                <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="4-1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="4-2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="4-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic4" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic4" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                </div>
+            </div>
+ </div><hr />
+  <!--end of top body-->
+  <!--the bottom body-->
+  <!--container1-->
+ <div class="container-fluid" id="container1">
+     <!--first row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6" id="">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Can I take classes with my child?
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-1"></span>
+                </div>
+                <div class="panel-body hold" id="container1-1">
+                   <a data-toggle="modal" data-target="#container1-1-p">Yes. In fact, many families are finding Tae Kwon Do to be the perfect family activity, combining an exciting 
+                   workout with a new learning experience. You have your choice of attending children's and adults' classes 
+                   individually or coming together to our Family Class. Either way you'll have a great time and create a special 
+                   family bond.</a>
+                    <div class="modal fade modalSetting" id="container1-1-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Can I take classes with my child?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Yes. In fact, many families are finding Tae Kwon Do to be the perfect family activity, combining an exciting 
+                                workout with a new learning experience. You have your choice of attending children's and adults' classes 
+                                individually or coming together to our Family Class. Either way you'll have a great time and create a special 
+                                family bond.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-1">Collapse</button> 
+                    
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Taekwondo will give you:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-2"></span>
+                </div>
+                <div class="panel-body hold" id="container1-2">
+                   <a data-toggle="modal" data-target="#container1-2-p">
+                   A way to bring your family closer together
+                   A rewarding activity your whole family will enjoy
+                   A way to find exercise time for both you and your children
+                   A positive environment surrounded by motivated goal-setters
+                   It is unlikely that your child can attend a health club with you. And you would probably feel a little out of place if you joined in with
+                    your son or daughter's soccer team. Yet at Taekwondo, every family member can train together side by side, providing you with shared goals, 
+                    quality family time, and an opportunity to meet a great group of friendly people. Of course, you'll also have a lot of fun as you improve your
+                  fitness, gain self-defense skills and learn the exciting martial art of Taekwondo. You can be confident that you and your family will be developing
+                   relationships with sincere, motivated, healthy families.</a>
+                   <div class="modal fade modalSetting" id="container1-2-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Taekwondo will give you:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                A way to bring your family closer together
+                                A rewarding activity your whole family will enjoy
+                                A way to find exercise time for both you and your children
+                                A positive environment surrounded by motivated goal-setters
+                                It is unlikely that your child can attend a health club with you. And you would probably feel a little out of place if you joined in with
+                                your son or daughter's soccer team. Yet at Taekwondo, every family member can train together side by side, providing you with shared goals, 
+                                quality family time, and an opportunity to meet a great group of friendly people. Of course, you'll also have a lot of fun as you improve your
+                                fitness, gain self-defense skills and learn the exciting martial art of Taekwondo. You can be confident that you and your family will be developing
+                                relationships with sincere, motivated, healthy families.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-2">Collapse</button> 
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Family fitness.
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-3"></span>
+                </div>
+                <div class="panel-body hold" id="container1-3">
+                   <a data-toggle="modal" data-target="#container1-3-p">
+                   As a parent, you can set an invaluable example for your child about the importance of regular exercise. Taekwondo combines the best of several 
+                   forms of physical training. Stretching and calisthenics will improve your flexibility and balance. Kicking drills and partner work will improve your 
+                   endurance and timing, and the different forms and curriculum requirements will improve your strength and muscle tone. Taekwondo is a great chance to 
+                   gain respect for each family member's abilities and an opportunity to learn from one another. Best of all, no two classes are alike. You and your 
+                   children will appreciate the varied, high-energy workouts and be motivated to attend lessons often.</a>
+                   <div class="modal fade modalSetting" id="container1-3-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Family fitness.</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                As a parent, you can set an invaluable example for your child about the importance of regular exercise. Taekwondo combines the best of several 
+                               forms of physical training. Stretching and calisthenics will improve your flexibility and balance. Kicking drills and partner work will improve your 
+                               endurance and timing, and the different forms and curriculum requirements will improve your strength and muscle tone. Taekwondo is a great chance to 
+                               gain respect for each family member's abilities and an opportunity to learn from one another. Best of all, no two classes are alike. You and your 
+                               children will appreciate the varied, high-energy workouts and be motivated to attend lessons often.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-3">Collapse</button> 
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--second row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Spend quality time with your family.
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-4"></span>
+                </div>
+                <div class="panel-body hold" id="container1-4">
+                    <a data-toggle="modal" data-target="#container1-4-p">
+                   The pursuit of Black Belt excellence is a worthwhile goal that will bring your family closer together. You will assist, coach and cheer one
+                    another on as you progress through the different requirements. You will also share the pride of seeing each family member advance and move 
+                    on to a new belt. Many parents also appreciate the fact that Taekwondo is based on the principles of courtesy, respect, and cooperation. As a
+                     result of Taekwondo, children are more well-mannered and behave better at home. They also tend to get along with their siblings and treat 
+                     household chores more responsibly.</a>
+                     <div class="modal fade modalSetting" id="container1-4-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Spend quality time with your family.</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                The pursuit of Black Belt excellence is a worthwhile goal that will bring your family closer together. You will assist, coach and cheer one
+                            another on as you progress through the different requirements. You will also share the pride of seeing each family member advance and move 
+                            on to a new belt. Many parents also appreciate the fact that Taekwondo is based on the principles of courtesy, respect, and cooperation. As a
+                            result of Taekwondo, children are more well-mannered and behave better at home. They also tend to get along with their siblings and treat 
+                            household chores more responsibly.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                     <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-4">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Be among positive people and good role models.
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-5"></span>
+                </div>
+                <div class="panel-body hold" id="container1-5">
+                    <a data-toggle="modal" data-target="#container1-5-p">
+                   As a parent, you are always aware of the places your child goes and the people that surround them. At Grand Master Hong's World Class Taekwondo 
+                   Center, you can be confident that you and your family will be developing relationships with sincere, motivated, and healthy families. In addition
+                   to our regular classes, we also offer a full calendar of events designed to improve your martial arts experience and foster friendships among 
+                   students and families. By providing a place to exercise, socialize, and network, Taekwondo can be a valuable resource to you and your family.</a>
+                   <div class="modal fade modalSetting" id="container1-5-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Be among positive people and good role models.</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                As a parent, you are always aware of the places your child goes and the people that surround them. At Grand Master Hong's World Class Taekwondo 
+                   Center, you can be confident that you and your family will be developing relationships with sincere, motivated, and healthy families. In addition
+                   to our regular classes, we also offer a full calendar of events designed to improve your martial arts experience and foster friendships among 
+                   students and families. By providing a place to exercise, socialize, and network, Taekwondo can be a valuable resource to you and your family.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-5">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Enjoy our special events and activities.
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-6"></span>
+                </div>
+                <div class="panel-body hold" id="container1-6">
+                    <a data-toggle="modal" data-target="#container1-6-p">
+                   Annual Awards Banquet
+                   Summer Picnic
+                   World Class Championships
+                   Board Break-A-Thon for charity</a>
+                   <div class="modal fade modalSetting" id="container1-6-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Enjoy our special events and activities.</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Annual Awards Banquet
+                                Summer Picnic
+                                World Class Championships
+                                Board Break-A-Thon for charity
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-6">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--third row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    How safe is it to learn?
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-6"></span>
+                </div>
+                <div class="panel-body hold" id="container1-7">
+                    <a data-toggle="modal" data-target="#container1-7-p">
+                   Tae Kwon Do is safe and fun for students of all ages and physical abilities. Classes are taught by expert instructors as students are shown
+                    techniques in a step-by-step manner at their own pace. A thorough stretching routine, matted flooring, and protective safety equipment are 
+                    ll part of our commitment to ensuring student safety.</a>
+                    <div class="modal fade modalSetting" id="container1-7-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel"> How safe is it to learn?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Tae Kwon Do is safe and fun for students of all ages and physical abilities. Classes are taught by expert instructors as students are shown
+                    techniques in a step-by-step manner at their own pace. A thorough stretching routine, matted flooring, and protective safety equipment are 
+                    ll part of our commitment to ensuring student safety.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-7">Collapse</button> 
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Our instructors make the difference.
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-7"></span>
+                </div>
+                <div class="panel-body hold" id="container1-8">
+                    <a data-toggle="modal" data-target="#container1-8-p">
+                   Our talented group of expert instructors will take the time to teach your family in a step-by-step fashion, guiding you with patience and 
+                   enthusiasm. Our staff is always receptive to your questions and they will serve as success coaches on your way to Black Belt excellence.</a>
+                   <div class="modal fade modalSetting" id="container1-8-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Our instructors make the difference.</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Our talented group of expert instructors will take the time to teach your family in a step-by-step fashion, guiding you with patience and 
+                   enthusiasm. Our staff is always receptive to your questions and they will serve as success coaches on your way to Black Belt excellence.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-8">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    How Will I Benefit from Martial Arts
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%" id="span-8"></span>
+                </div>
+                <div class="panel-body hold" id="container1-9">
+                    <a data-toggle="modal" data-target="#container1-9-p">
+                   Relaxation
+                   Balance
+                   Focus
+                   Speed
+                   Self-defense
+                   Flexibility
+                   Strength
+                   Stamina</a>
+                   <div class="modal fade modalSetting" id="container1-9-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">How Will I Benefit from Martial Arts</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Relaxation
+                                Balance
+                                Focus
+                                Speed
+                                Self-defense
+                                Flexibility
+                                Strength
+                                Stamina
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container1-9">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+
+</div>
+<!--container2-->
+<div class="container-fluid hidden" id="container2">
+     <!--first row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    At what age can children start?
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-1">
+                    <a data-toggle="modal" data-target="#container2-1-p">
+                   Our experience has shown that children ages four and up will be able to take the greatest advantage from Tae 
+                   Kwon Do classes. Starting at age four, your child can participate in our trial lesson program, which allows our
+                   instructors to work with them one on one and evaluate their readiness for group classes. Our staff will then use
+                   their experience to recommend the best course of action for you and your child.</a>
+                   <div class="modal fade modalSetting" id="container2-1-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">At what age can children start?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Our experience has shown that children ages four and up will be able to take the greatest advantage from Tae 
+                                Kwon Do classes. Starting at age four, your child can participate in our trial lesson program, which allows our
+                                instructors to work with them one on one and evaluate their readiness for group classes. Our staff will then use
+                                their experience to recommend the best course of action for you and your child.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-1">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Your child will:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-2">
+                    <a data-toggle="modal" data-target="#container2-2-p">
+                   Become more fit, energetic, and active
+                   Learn the importance of treating others with respect
+                   Learn the value of self-control and the power of cooperation
+                   Gain the ability to set and achieve goals
+                   Learn to persevere and not give up when faced with challenges
+                   As a student of Taekwondo, your child will experience more than just self-defense. They will experience 
+                   self-improvement. Virtually every area of their life can be affected in a positive way through Taekwondo 
+                   training. Taekwondo will improve your child’s fitness, increase their self-esteem, and sharpen their focus in 
+                   such a powerful way that it will benefit them throughout their life.</a>
+                   <div class="modal fade modalSetting" id="container2-2-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Your child will:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Become more fit, energetic, and active
+                   Learn the importance of treating others with respect
+                   Learn the value of self-control and the power of cooperation
+                   Gain the ability to set and achieve goals
+                   Learn to persevere and not give up when faced with challenges
+                   As a student of Taekwondo, your child will experience more than just self-defense. They will experience 
+                   self-improvement. Virtually every area of their life can be affected in a positive way through Taekwondo 
+                   training. Taekwondo will improve your child’s fitness, increase their self-esteem, and sharpen their focus in 
+                   such a powerful way that it will benefit them throughout their life.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-2">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Taekwondo is great for physical fitness:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-3">
+                    <a data-toggle="modal" data-target="#container2-3-p">
+                   Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve 
+                   your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone 
+                   and improve your athletic performance for other sports.</a>
+                   <div class="modal fade modalSetting" id="container2-3-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Taekwondo is great for physical fitness:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve 
+                   your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone 
+                   and improve your athletic performance for other sports.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-3">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--second row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Taekwondo is perfect for:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-4">
+                    <a data-toggle="modal" data-target="#container2-4-p">
+                   Helping young children to develop coordination and balance
+                   Motivating sedentary children to participate in exercise
+                   Enhancing the strength of children with physical challenges
+                   Providing athletic children a way to become even more fit
+                   Our enthusiastic instructors and high-energy classroom make getting in shape fun and rewarding. Your child 
+                   will look forward to coming to class and will want to attend regularly.</a>
+                   <div class="modal fade modalSetting" id="container2-4-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Taekwondo is perfect for:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Helping young children to develop coordination and balance
+                   Motivating sedentary children to participate in exercise
+                   Enhancing the strength of children with physical challenges
+                   Providing athletic children a way to become even more fit
+                   Our enthusiastic instructors and high-energy classroom make getting in shape fun and rewarding. Your child 
+                   will look forward to coming to class and will want to attend regularly.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-4">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Children improve listening skills, concentration, and grades
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-5">
+                    <a data-toggle="modal" data-target="#container2-5-p">
+                   Teachers and parents alike often notice a dramatic difference in children who study the martial arts. Teaching
+                    kids to stay focused is one of our specialties and the results are noticeable. Children listen better at home, 
+                    handle homework and chores more efficiently, put more focus and effort into schoolwork, and receive better grades.</a>
+                    <div class="modal fade modalSetting" id="container2-5-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Children improve listening skills, concentration, and grades</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Teachers and parents alike often notice a dramatic difference in children who study the martial arts. Teaching
+                    kids to stay focused is one of our specialties and the results are noticeable. Children listen better at home, 
+                    handle homework and chores more efficiently, put more focus and effort into schoolwork, and receive better grades.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-5">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Does Taekwondo increase aggressiveness?
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-6">
+                    <a data-toggle="modal" data-target="#container2-6-p">
+                   Absolutely not. Your child will be taught from the first lesson that true "Tae Kwon Do kids" never misuse their 
+                   martial arts skills. Throughout their training, they will be reminded that being physically and mentally tough 
+                   does not allow one to be tough with others. Instead, Tae Kwon Do students are expected to be humble, courteous, 
+                   respectful and careful about when and where they practice their skills. The instructors at Master Chong's will 
+                   continually educate your child that Tae Kwon Do is a form of exercise and self improvement, not a tool for bullying.</a>
+                   <div class="modal fade modalSetting" id="container2-6-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Does Taekwondo increase aggressiveness?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Absolutely not. Your child will be taught from the first lesson that true "Tae Kwon Do kids" never misuse their 
+                   martial arts skills. Throughout their training, they will be reminded that being physically and mentally tough 
+                   does not allow one to be tough with others. Instead, Tae Kwon Do students are expected to be humble, courteous, 
+                   respectful and careful about when and where they practice their skills. The instructors at Master Chong's will 
+                   continually educate your child that Tae Kwon Do is a form of exercise and self improvement, not a tool for bullying.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-6">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--third row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    The focus gained at Taekwondo will:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-7">
+                    <a data-toggle="modal" data-target="#container2-7-p">
+                   Help hyper-active kids to settle down
+                   Give children with Attention Deficit Disorder better concentration skills
+                   Enable students to improve their memory and study habits
+                   Boost Self-Esteem and Confidence
+                   Taekwondo will provide your child the challenges and the tools to overcome them. Using praise and positive 
+                   feedback, our instructors encourage students and motivate effort. Our belt system gives students mini-goals to 
+                   strive for and teaches kids the power of goal-setting.</a>
+                   <div class="modal fade modalSetting" id="container2-7-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">The focus gained at Taekwondo will:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Help hyper-active kids to settle down
+                   Give children with Attention Deficit Disorder better concentration skills
+                   Enable students to improve their memory and study habits
+                   Boost Self-Esteem and Confidence
+                   Taekwondo will provide your child the challenges and the tools to overcome them. Using praise and positive 
+                   feedback, our instructors encourage students and motivate effort. Our belt system gives students mini-goals to 
+                   strive for and teaches kids the power of goal-setting.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-7">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    The self-confidence gained in Taekwondo will enable your child to:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-8">
+                    <a data-toggle="modal" data-target="#container2-8-p">
+                   Overcome shyness
+                   Resist negative peer pressure
+                   Stand up to bullies and speak up for themselves
+                   Raise their hand in school and volunteer their opinion
+                   Be more comfortable with meeting new people</a>
+                   <div class="modal fade modalSetting" id="container2-8-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">The self-confidence gained in Taekwondo will enable your child to:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Overcome shyness
+                   Resist negative peer pressure
+                   Stand up to bullies and speak up for themselves
+                   Raise their hand in school and volunteer their opinion
+                   Be more comfortable with meeting new people
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-8">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    How safe is it to learn?
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-9">
+                    <a data-toggle="modal" data-target="#container2-9-p">
+                   Tae Kwon Do is safe and fun for students of all ages and physical abilities. Classes are taught by expert 
+                   instructors as students are shown techniques in a step-by-step manner at their own pace. A thorough stretching 
+                   routine, matted flooring, and protective safety equipment are all part of our commitment to ensuring student safety.</a>
+                   <div class="modal fade modalSetting" id="container2-9-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">How safe is it to learn?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Tae Kwon Do is safe and fun for students of all ages and physical abilities. Classes are taught by expert 
+                   instructors as students are shown techniques in a step-by-step manner at their own pace. A thorough stretching 
+                   routine, matted flooring, and protective safety equipment are all part of our commitment to ensuring student safety.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-9">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div><hr />
+     <!--forth row-->
+     <div class="row container-fluid">
+         <div class="col-lg-6 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Our instructors make the difference:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-10">
+                    <a data-toggle="modal" data-target="#container2-10-p">
+                   Our instructors are experts at working with children. They know how to gain your child’s attention and keep 
+                   them motivated by setting realistic step-by-step goals and encouraging them every step of the way. Every member
+                    of our staff will take a personal interest in your child and be committed to helping them achieve their potential. 
+                    We also take it as a priority to serve as good role models. You can be assured that we will demonstrate the respect 
+                    and character that we would like our students to embody. Our staff are patient, enthusiastic, and teach with a smile!
+                     We love what we do and are sure that you and your family will feel that in the classroom.</a>
+                     <div class="modal fade modalSetting" id="container2-10-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Our instructors make the difference:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Our instructors are experts at working with children. They know how to gain your child’s attention and keep 
+                   them motivated by setting realistic step-by-step goals and encouraging them every step of the way. Every member
+                    of our staff will take a personal interest in your child and be committed to helping them achieve their potential. 
+                    We also take it as a priority to serve as good role models. You can be assured that we will demonstrate the respect 
+                    and character that we would like our students to embody. Our staff are patient, enthusiastic, and teach with a smile!
+                     We love what we do and are sure that you and your family will feel that in the classroom.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-10">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    How Will I Benefit from Martial Arts
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container2-11">
+                    <a data-toggle="modal" data-target="#container2-11-p">
+                   Relaxation
+                   Balance
+                   Focus
+                   Speed
+                   Self-defense
+                   Flexibility
+                   Strength
+                   Stamina</a>
+                   <div class="modal fade modalSetting" id="container2-11-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">How Will I Benefit from Martial Arts</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Relaxation
+                                Balance
+                                Focus
+                                Speed
+                                Self-defense
+                                Flexibility
+                                Strength
+                                Stamina
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container2-11">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+
+</div>
+<!--container3-->
+<div class="container-fluid hidden" id="container3">
+     <!--first row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                     What if I never did it before or if I'm out of shape?
+                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>  
+                </div>
+                <div class="panel-body hold" id="container3-1">
+                    <a data-toggle="modal" data-target="#container3-1-p"> 
+                     At Grandmaster Hong's World Class Taekwondo, we have ongoing enrollment, so beginners are always welcome. Our 
+                     special trial program makes it easy for new students of all fitness levels to get started. First time students
+                      receive one-on-one instruction designed to answer common questions and provide an introduction to the basics 
+                      of Tae Kwon Do. In addition, the belt system used in Tae Kwon Do allows all students to train at their own pace 
+                      and improve their physical condition gradually.</a>
+                      <div class="modal fade modalSetting" id="container3-1-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">What if I never did it before or if I'm out of shape?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                At Grandmaster Hong's World Class Taekwondo, we have ongoing enrollment, so beginners are always welcome. Our 
+                     special trial program makes it easy for new students of all fitness levels to get started. First time students
+                      receive one-on-one instruction designed to answer common questions and provide an introduction to the basics 
+                      of Tae Kwon Do. In addition, the belt system used in Tae Kwon Do allows all students to train at their own pace 
+                      and improve their physical condition gradually.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-1">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                     Our workout is perfect for anyone who has:
+                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-2">
+                    <a data-toggle="modal" data-target="#container3-2-p">
+                     Joined and quit a health club
+                     Tried to lose weight but is not interested in the gym scene
+                     Become bored of traditional exercise (lifting weights, running)
+                     Been looking for a new challenge
+                     The only way that any exercise program works is if you are able to stick with it. The reason most people drop
+                      their exercise routine, whether it's going to the gym or working out at home, is that they get bored. The 
+                      monotony and repetition in traditional forms of exercise turns many people off after just a few months.</a>
+                      <div class="modal fade modalSetting" id="container3-2-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Our workout is perfect for anyone who has:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Joined and quit a health club
+                                Tried to lose weight but is not interested in the gym scene
+                                Become bored of traditional exercise (lifting weights, running)
+                                Been looking for a new challenge
+                                The only way that any exercise program works is if you are able to stick with it. The reason most people drop
+                                their exercise routine, whether it's going to the gym or working out at home, is that they get bored. The 
+                                monotony and repetition in traditional forms of exercise turns many people off after just a few months.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-2">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Taekwondo classes are full of variety:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-3">
+                    <a data-toggle="modal" data-target="#container3-3-p">
+                   Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve 
+                   your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone 
+                   and improve your athletic performance for other sports.</a>
+                   <div class="modal fade modalSetting" id="container3-3-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Taekwondo classes are full of variety:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve 
+                   your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone 
+                   and improve your athletic performance for other sports.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-3">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--second row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Through Taekwondo you will:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-4">
+                    <a data-toggle="modal" data-target="#container3-4-p">
+                   Improve your health
+                   Reduce your stress
+                   Increase your confidence
+                   Learn a highly effective form of self defense
+                   Positively affect every aspect of your life</a>
+                   <div class="modal fade modalSetting" id="container3-4-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Through Taekwondo you will:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Improve your health
+                   Reduce your stress
+                   Increase your confidence
+                   Learn a highly effective form of self defense
+                   Positively affect every aspect of your life
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-4">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Learn powerful self-defense techniques:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-5">
+                    <a data-toggle="modal" data-target="#container3-5-p">
+                   As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form 
+                   of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness 
+                   that will give you options in a confrontational situation. Criminals often seek out those who "look like a victim."
+                    Training in Taekwondo is also a preventive self-defense method. It will improve your physical condition, posture, 
+                    eye contact, and awareness. By allowing you to carry yourself with an aura of strength and self-confidence, 
+                    Taekwondo can help prevent a confrontation from ever happening.</a>
+                    <div class="modal fade modalSetting" id="container3-5-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Learn powerful self-defense techniques:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form 
+                               of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness 
+                               that will give you options in a confrontational situation. Criminals often seek out those who "look like a victim."
+                               Training in Taekwondo is also a preventive self-defense method. It will improve your physical condition, posture, 
+                               eye contact, and awareness. By allowing you to carry yourself with an aura of strength and self-confidence, 
+                               Taekwondo can help prevent a confrontation from ever happening.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-5">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    How safe is it to learn?
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-6">
+                    <a data-toggle="modal" data-target="#container3-6-p">
+                   Tae Kwon Do is safe and fun for students of all ages and physical abilities. Classes are taught by expert instructors 
+                   as students are shown techniques in a step-by-step manner at their own pace. A thorough stretching routine, matted 
+                   flooring, and protective safety equipment are all part of our commitment to ensuring student safety.</a>
+                   <div class="modal fade modalSetting" id="container3-6-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">How safe is it to learn?</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Tae Kwon Do is safe and fun for students of all ages and physical abilities. Classes are taught by expert instructors 
+                   as students are shown techniques in a step-by-step manner at their own pace. A thorough stretching routine, matted 
+                   flooring, and protective safety equipment are all part of our commitment to ensuring student safety.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-6">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--third row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Our instructors make the difference:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-7">
+                    <a data-toggle="modal" data-target="#container3-7-p">
+                   Our talented group of expert instructors will take the time to teach you in a step-by-step fashion and guide you 
+                   with patience and enthusiasm. They will always be receptive to your questions and serve as success coaches on your 
+                   way to achieving Black Belt excellence. Our staff are not the only positive people you will find at our school. The 
+                   students are as well. You are sure to find that Taekwondo students are among the most friendly, cooperative, and 
+                   motivated people you've ever met. The friendly atmosphere in our school is just one more reason why you'll want to 
+                   attend classes regularly. We promise that Taekwondo will be one of the best decisions you ever make.</a>
+                   <div class="modal fade modalSetting" id="container3-7-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Our instructors make the difference:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Our talented group of expert instructors will take the time to teach you in a step-by-step fashion and guide you 
+                   with patience and enthusiasm. They will always be receptive to your questions and serve as success coaches on your 
+                   way to achieving Black Belt excellence. Our staff are not the only positive people you will find at our school. The 
+                   students are as well. You are sure to find that Taekwondo students are among the most friendly, cooperative, and 
+                   motivated people you've ever met. The friendly atmosphere in our school is just one more reason why you'll want to 
+                   attend classes regularly. We promise that Taekwondo will be one of the best decisions you ever make.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-7">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    How Will I Benefit from Martial Arts
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container3-8">
+                    <a data-toggle="modal" data-target="#container3-8-p">
+                   Relaxation
+                   Balance
+                   Focus
+                   Speed
+                   Self-defense
+                   Flexibility
+                   Strength
+                   Stamina</a>
+                   <div class="modal fade modalSetting" id="container3-8-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">How Will I Benefit from Martial Arts</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Relaxation
+                                Balance
+                                Focus
+                                Speed
+                                Self-defense
+                                Flexibility
+                                Strength
+                                Stamina
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-8">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Remain to be updated...
+                </div>
+                <div class="panel-body hold" id="container3-9">
+                   Remain to be updated...
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container3-9">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+
+</div>
+<!--container4-->
+<div class="container-fluid hidden" id="container4">
+     <!--first row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Our workout is perfect for anyone who has:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container4-1">
+                    <a data-toggle="modal" data-target="#container4-1-p">
+                    Joined and quit a health club
+                    Tried to lose weight but is not interested in the gym scene
+                    Become bored of traditional exercise (lifting weights, running)
+                    Been looking for a new challenge
+                    The only way that any exercise program works is if you are able to stick with it. The reason most people drop 
+                    their exercise routine, whether it's going to the gym or working out at home, is that they get bored. 
+                    The monotony and repetition in traditional forms of exercise turns many people off after just a few months.</a>
+                    <div class="modal fade modalSetting" id="container4-1-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Our workout is perfect for anyone who has:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Joined and quit a health club
+                    Tried to lose weight but is not interested in the gym scene
+                    Become bored of traditional exercise (lifting weights, running)
+                    Been looking for a new challenge
+                    The only way that any exercise program works is if you are able to stick with it. The reason most people drop 
+                    their exercise routine, whether it's going to the gym or working out at home, is that they get bored. 
+                    The monotony and repetition in traditional forms of exercise turns many people off after just a few months.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container4-1">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Taekwondo classes are full of variety:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container4-2">
+                    <a data-toggle="modal" data-target="#container4-2-p">
+                   Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve 
+                   your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone 
+                   and improve your athletic performance for other sports.</a>
+                   <div class="modal fade modalSetting" id="container4-2-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Taekwondo classes are full of variety:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve 
+                   your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone 
+                   and improve your athletic performance for other sports.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container4-2">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Through Taekwondo you will:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container4-3">
+                    <a data-toggle="modal" data-target="#container4-3-p">
+                   Improve your health
+                   Reduce your stress
+                   Increase your confidence
+                   Learn a highly effective form of self defense
+                   Positively affect every aspect of your life
+                   With cellular phones, faxes, and email you can probably be reached at anytime, anyplace. The result is more 
+                   information, more to do, increased stress and decreased personal time. Martial artists enjoy the calm peace of 
+                   mind that comes from controlling one's thoughts and actions. You can possess this same control and take charge of
+                    your stress. During your Taekwondo training, you will learn breathing and meditation techniques allowing you to 
+                    slow down your frantic pace and gain a fresh perspective. Unlike traditional workouts that make you feel drained 
+                    and exhausted, a Taekwondo workout will leave you feeling invigorated and energetic.</a>
+                    <div class="modal fade modalSetting" id="container4-3-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Through Taekwondo you will:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Improve your health
+                   Reduce your stress
+                   Increase your confidence
+                   Learn a highly effective form of self defense
+                   Positively affect every aspect of your life
+                   With cellular phones, faxes, and email you can probably be reached at anytime, anyplace. The result is more 
+                   information, more to do, increased stress and decreased personal time. Martial artists enjoy the calm peace of 
+                   mind that comes from controlling one's thoughts and actions. You can possess this same control and take charge of
+                    your stress. During your Taekwondo training, you will learn breathing and meditation techniques allowing you to 
+                    slow down your frantic pace and gain a fresh perspective. Unlike traditional workouts that make you feel drained 
+                    and exhausted, a Taekwondo workout will leave you feeling invigorated and energetic.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container4-3">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     <hr />
+     <!--second row-->
+     <div class="row container-fluid">
+         <div class="col-lg-4 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Learn powerful self-defense techniques:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container4-4">
+                    <a data-toggle="modal" data-target="#container4-4-p">
+                   As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form
+                    of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness 
+                    that will give you options in a confrontational situation. Criminals often seek out those who "look like a victim." 
+                    Training in Taekwondo is also a preventive self-defense method. It will improve your physical condition, posture, 
+                    eye contact, and awareness. By allowing you to carry yourself with an aura of strength and self-confidence, Taekwondo 
+                    can help prevent a confrontation from ever happening.</a>
+                    <div class="modal fade modalSetting" id="container4-4-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Learn powerful self-defense techniques:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form
+                    of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness 
+                    that will give you options in a confrontational situation. Criminals often seek out those who "look like a victim." 
+                    Training in Taekwondo is also a preventive self-defense method. It will improve your physical condition, posture, 
+                    eye contact, and awareness. By allowing you to carry yourself with an aura of strength and self-confidence, Taekwondo 
+                    can help prevent a confrontation from ever happening.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container4-4">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Our instructors make the difference:
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container4-5">
+                    <a data-toggle="modal" data-target="#container4-5-p">
+                   Our talented group of expert instructors will take the time to teach you in a step-by-step fashion and guide you with 
+                   patience and enthusiasm. They will always be receptive to your questions and serve as success coaches on your way to 
+                   achieving Black Belt excellence. Our staff are not the only positive people you will find at our school. The students 
+                   are as well. You are sure to find that Taekwondo students are among the most friendly, cooperative, and motivated people 
+                   you've ever met. The friendly atmosphere in our school is just one more reason why you'll want to attend classes regularly. 
+                   We promise that Taekwondo will be one of the best decisions you ever make.</a>
+                   <div class="modal fade modalSetting" id="container4-5-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">Our instructors make the difference:</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Our talented group of expert instructors will take the time to teach you in a step-by-step fashion and guide you with 
+                   patience and enthusiasm. They will always be receptive to your questions and serve as success coaches on your way to 
+                   achieving Black Belt excellence. Our staff are not the only positive people you will find at our school. The students 
+                   are as well. You are sure to find that Taekwondo students are among the most friendly, cooperative, and motivated people 
+                   you've ever met. The friendly atmosphere in our school is just one more reason why you'll want to attend classes regularly. 
+                   We promise that Taekwondo will be one of the best decisions you ever make.
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container4-5">Collapse</button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    How Will I Benefit from Martial Arts
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok hidden" style="color:green;font-size:150%"></span>
+                </div>
+                <div class="panel-body hold" id="container4-6">
+                    <a data-toggle="modal" data-target="#container4-6-p">
+                   Relaxation
+                   Balance
+                   Focus
+                   Speed
+                   Self-defense
+                   Flexibility
+                   Strength
+                   Stamina</a>
+                   <div class="modal fade modalSetting" id="container4-6-p" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-content zoomFont">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h2 class="modal-title text-center" id="myModalLabel">How Will I Benefit from Martial Arts</h2>
+                            </div>
+                            <div class="container modal-body ">
+                                Relaxation
+                                Balance
+                                Focus
+                                Speed
+                                Self-defense
+                                Flexibility
+                                Strength
+                                Stamina
+                            </div>
+                            <div class="modal-footer" >
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="collapse" href="#container4-6">Collapse</button>
+                </div>
+            </div>
+         </div>
+     </div>
+     
+
+</div>
+        
+    
+
+
+
+
+
+
+
+</body>
+<div  class="panel panel-default footerSettings" id="zcc" >
+              
+              <div class="panel-body">
+                  <div class="panel-body">
+                      <div class="col-lg-7 col-md-6 col-sm-12">
+                      <p style="font-size:50px" class="text-center">please contact us:</p>
+                      </div>
+                      <div class="col-lg-5 col-md-6 col-sm-12">
+                         <div class="row">
+                             <br/>
+                             <a class="btn  btn-social btn-twitter">
+                             <span class="fa fa-twitter"></span>
+                                Twitter
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                                Facebook
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                                Instagram
+                             </a>&nbsp&nbsp
+                             <a class="btn  btn-social btn-google">
+                             <span class="fa fa-google"></span>
+                                Google
+                             </a>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+    <script>
+       $("#btn1").click(function(){
+          $("#carousel2").addClass("hidden");
+          $("#carousel3").addClass("hidden");
+          $("#carousel4").addClass("hidden");
+          $("#container2").addClass("hidden");
+          $("#container3").addClass("hidden");
+          $("#container4").addClass("hidden");
+          $("#carousel1").removeClass("hidden");
+          $("#container1").removeClass("hidden");  
+       });
+        $("#btn2").click(function(){
+          $("#carousel1").addClass("hidden");
+          $("#carousel3").addClass("hidden");
+          $("#carousel4").addClass("hidden");
+          $("#container1").addClass("hidden");
+          $("#container3").addClass("hidden");
+          $("#container4").addClass("hidden");
+          $("#carousel2").removeClass("hidden");
+          $("#container2").removeClass("hidden");  
+       });
+        $("#btn3").click(function(){
+          $("#carousel1").addClass("hidden");
+          $("#carousel2").addClass("hidden");
+          $("#carousel4").addClass("hidden");
+          $("#container1").addClass("hidden");
+          $("#container2").addClass("hidden");
+          $("#container4").addClass("hidden");
+          $("#carousel3").removeClass("hidden");
+          $("#container3").removeClass("hidden");  
+       });
+        $("#btn4").click(function(){
+          $("#carousel1").addClass("hidden");
+          $("#carousel2").addClass("hidden");
+          $("#carousel3").addClass("hidden");
+          $("#container1").addClass("hidden");
+          $("#container2").addClass("hidden");
+          $("#container3").addClass("hidden");
+          $("#carousel4").removeClass("hidden");
+          $("#container4").removeClass("hidden");  
+       });
+       
+      $(".hold").on("mouseover",function(){
+         $(this).parent().children(".panel-heading , .panel-footer").css("background-color","#F4FA58");
+         $(this).css("background-color","#F5F6CE");
+         $(this).siblings().children("button").removeClass("btn-danger").addClass("btn-primary");
+         var panel = $(this);
+         $(this).parent().addClass("mouseOverSettings");
+         //console.log($(this).children("div.modalSetting").length);
+         //console.log($(this).children("div.modalSetting").children("div.zoomFont").length);
+         //console.log($(this).children("div.modalSetting").children("div.zoomFont").children("div.modal-footer").length); 
+         //console.log($(this).children("div.modalSetting").children("div.zoomFont").children("div.modal-footer").children("button").length);
+         var btnClicked = $(this).children("div.modalSetting").children("div.zoomFont").children("div.modal-footer").children("button");
+         btnClicked.click(function(){
+             panel.parent().children(".panel-heading").children("span").removeClass("hidden");
+             panel.css("background-color","#FFFFFF");
+             if((!$("#span-1").hasClass("hidden")) && (!$("#span-2").hasClass("hidden"))&&(!$("#span-3").hasClass("hidden"))&&(!$("#span-4").hasClass("hidden"))&&(!$("#span-5").hasClass("hidden"))&&(!$("#span-6").hasClass("hidden"))&&(!$("#span-7").hasClass("hidden"))&&(!$("#span-8").hasClass("hidden"))){
+                 $(".btn-danger").attr("data-toggle","modal").attr("data-target","#hiddenThreeModal"); 
+                 $("#hiddenThreeModal").removeClass("hidden");
+                 console.log("all done!");
+             }
+             //console.log(panel.parent().children(".panel-heading").length);
+             //console.log(panel.parent().children(".panel-heading").children("span").length);
+         });             
+      }).on("mouseout",function(){
+         $(this).parent().children(".panel-heading , .panel-footer").css("background-color","#BCF5A9").css("border-color","#BCF5A9");
+         $(this).css("background-color","#FFFFFF");
+         $(this).siblings().children("button[data-toggle=collapse]").removeClass("btn-primary").addClass("btn-danger");
+         $(this).parent().removeClass("mouseOverSettings");
+      });
+      
+      
+
+
+
+    </script>
+    
+    <script src="js/bootstrap.min.js"></script>
+</html>
